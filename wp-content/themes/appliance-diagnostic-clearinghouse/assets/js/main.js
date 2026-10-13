@@ -1,0 +1,304 @@
+/**
+ * Appliance Diagnostic Clearinghouse - Main Theme JS
+ * Lightweight vanilla JavaScript (< 5KB) with zero dependencies.
+ * Provides accessible interactions, smooth motion, reading progress, and interactive diagnostics.
+ */
+document.addEventListener('DOMContentLoaded', function () {
+  // 1. Mobile Navigation Drawer Toggle
+  var menuBtn = document.querySelector('.btn-mobile-menu');
+  var mobileDrawer = document.querySelector('.mobile-drawer');
+
+  if (menuBtn && mobileDrawer) {
+    menuBtn.addEventListener('click', function () {
+      var isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', !isExpanded);
+      mobileDrawer.classList.toggle('is-open');
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mobileDrawer.classList.contains('is-open')) {
+        menuBtn.setAttribute('aria-expanded', 'false');
+        mobileDrawer.classList.remove('is-open');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  // 2. Reading Progress Bar for Diagnostic Articles
+  var article = document.querySelector('.single-article-layout');
+  if (article) {
+    var progressBar = document.createElement('div');
+    progressBar.className = 'reading-progress-bar';
+    document.body.appendChild(progressBar);
+
+    window.addEventListener('scroll', function () {
+      var articleRect = article.getBoundingClientRect();
+      var articleTop = articleRect.top + window.scrollY;
+      var articleHeight = article.offsetHeight;
+      var windowHeight = window.innerHeight;
+      var scrollPos = window.scrollY;
+
+      if (scrollPos < articleTop) {
+        progressBar.style.width = '0%';
+      } else if (scrollPos > (articleTop + articleHeight - windowHeight)) {
+        progressBar.style.width = '100%';
+      } else {
+        var percentage = ((scrollPos - articleTop) / (articleHeight - windowHeight)) * 100;
+        progressBar.style.width = Math.min(100, Math.max(0, percentage)) + '%';
+      }
+    }, { passive: true });
+  }
+
+  // 3. Floating Toast Helper
+  function showToast(message) {
+    var existingToast = document.querySelector('.adc-toast');
+    if (existingToast) {
+      existingToast.remove();
+    }
+    var toast = document.createElement('div');
+    toast.className = 'adc-toast';
+    toast.innerHTML = '<svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span>' + message + '</span>';
+    document.body.appendChild(toast);
+
+    requestAnimationFrame(function () {
+      toast.classList.add('is-visible');
+    });
+
+    setTimeout(function () {
+      toast.classList.remove('is-visible');
+      setTimeout(function () {
+        if (toast.parentNode) {
+          toast.remove();
+        }
+      }, 350);
+    }, 2800);
+  }
+
+  // 4. Copy 30-Sec Action / Reset Sequence
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.dsc-copy-btn');
+    if (btn) {
+      var textToCopy = btn.getAttribute('data-copy') || '';
+      if (!textToCopy) {
+        var actionPanel = btn.closest('.dsc-action-panel');
+        if (actionPanel) {
+          var textEl = actionPanel.querySelector('.dsc-action-text');
+          if (textEl) {
+            textToCopy = textEl.textContent.trim();
+          }
+        }
+      }
+      if (textToCopy && navigator.clipboard) {
+        navigator.clipboard.writeText(textToCopy).then(function () {
+          showToast('Diagnostic reset procedure copied to clipboard!');
+        });
+      }
+    }
+  });
+
+  // 5. Interactive Hero Simulator Logic (Dial + Binary Decoder)
+  var simCard = document.querySelector('.diagnostic-simulator-card');
+  if (simCard) {
+    // Tab switching
+    var tabBtns = simCard.querySelectorAll('.sim-tab-btn');
+    var panels = simCard.querySelectorAll('.sim-panel');
+
+    tabBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var targetId = btn.getAttribute('data-target');
+        tabBtns.forEach(function (b) { b.classList.remove('is-active'); });
+        panels.forEach(function (p) { p.classList.remove('is-active'); });
+
+        btn.classList.add('is-active');
+        var targetPanel = simCard.querySelector('#' + targetId);
+        if (targetPanel) {
+          targetPanel.classList.add('is-active');
+        }
+      });
+    });
+
+    // Rotary Dial State Machine
+    var dialGraphic = simCard.querySelector('.dial-graphic-wrap');
+    var stepIndicator = simCard.querySelector('.sim-step-indicator');
+    var instructionEl = simCard.querySelector('.sim-instruction');
+    var dialLeds = simCard.querySelectorAll('.dial-led');
+    var dialLeftBtn = simCard.querySelector('.btn-dial-left');
+    var dialRightBtn = simCard.querySelector('.btn-dial-right');
+    var dialResetBtn = simCard.querySelector('.btn-dial-reset');
+
+    var targetSequence = ['left', 'right', 'right', 'right', 'left', 'right'];
+    var userSequence = [];
+    var currentRotation = 0;
+    var timerStart = null;
+    var timerTimeout = null;
+
+    function updateDialVisuals() {
+      if (dialGraphic) {
+        dialGraphic.style.transform = 'rotate(' + currentRotation + 'deg)';
+      }
+    }
+
+    function resetDial() {
+      userSequence = [];
+      currentRotation = 0;
+      timerStart = null;
+      if (timerTimeout) {
+        clearTimeout(timerTimeout);
+      }
+      updateDialVisuals();
+      dialLeds.forEach(function (led) { led.classList.remove('is-lit'); });
+      if (stepIndicator) stepIndicator.textContent = 'Step 1 of 6';
+      if (instructionEl) instructionEl.innerHTML = 'Turn knob <strong>1 click LEFT</strong> (Counter-Clockwise)';
+    }
+
+    function handleDialTurn(direction) {
+      if (!timerStart) {
+        timerStart = Date.now();
+        timerTimeout = setTimeout(function () {
+          resetDial();
+          showToast('Time expired (>6 seconds). Sequence reset! Try again.');
+        }, 6000);
+      }
+
+      var expectedDir = targetSequence[userSequence.length];
+
+      if (direction === 'left') {
+        currentRotation -= 30;
+      } else {
+        currentRotation += 30;
+      }
+      updateDialVisuals();
+
+      if (direction === expectedDir) {
+        userSequence.push(direction);
+        var stepIndex = userSequence.length;
+
+        // Sequence instructions mapping
+        var instructions = [
+          'Turn knob 1 click LEFT',
+          'Turn knob 3 clicks RIGHT (Click 1 of 3)',
+          'Turn knob 3 clicks RIGHT (Click 2 of 3)',
+          'Turn knob 3 clicks RIGHT (Click 3 of 3)',
+          'Turn knob 1 click LEFT',
+          'Turn knob 1 click RIGHT',
+        ];
+
+        if (stepIndex < 6) {
+          if (stepIndicator) stepIndicator.textContent = 'Step ' + (stepIndex + 1) + ' of 6';
+          if (instructionEl) instructionEl.innerHTML = instructions[stepIndex];
+        } else {
+          // Success!
+          clearTimeout(timerTimeout);
+          dialLeds.forEach(function (led) { led.classList.add('is-lit'); });
+          if (stepIndicator) stepIndicator.textContent = 'Diagnostic Mode Active!';
+          if (instructionEl) instructionEl.innerHTML = '<span style="color:#16a34a; font-weight:800;">SUCCESS! All LEDs Flashing.</span> Machine is now ready to output fault codes or calibrate.';
+          showToast('Diagnostic Mode entered successfully in ' + ((Date.now() - timerStart) / 1000).toFixed(1) + 's!');
+        }
+      } else {
+        // Wrong direction!
+        clearTimeout(timerTimeout);
+        showToast('Incorrect turn direction. Starting over.');
+        resetDial();
+      }
+    }
+
+    if (dialLeftBtn) {
+      dialLeftBtn.addEventListener('click', function () { handleDialTurn('left'); });
+    }
+    if (dialRightBtn) {
+      dialRightBtn.addEventListener('click', function () { handleDialTurn('right'); });
+    }
+    if (dialResetBtn) {
+      dialResetBtn.addEventListener('click', resetDial);
+    }
+
+    // Binary LED Decoder Logic
+    var decoderCheckboxes = simCard.querySelectorAll('.decoder-chk');
+    var decoderPhaseRadios = simCard.querySelectorAll('input[name="decoder_phase"]');
+    var decoderResultCode = simCard.querySelector('.decoder-result-code');
+    var decoderResultDesc = simCard.querySelector('.decoder-result-desc');
+
+    var knownCodes = {
+      'F02 E01': 'Long Drain Timeout / Drain pump restriction or clogged coin trap.',
+      'F05 E01': 'Lid Lock Failure / Solenoid unable to lock or verify strike switch.',
+      'F07 E01': 'Drive Motor Tachometer Error / Optical speed sensor unable to detect motor rotation.',
+      'F07 E05': 'Shifter / Actuator Fault / Transmission splutch unable to switch between agitate and spin.',
+      'F08 E01': 'Long Fill / No water detected entering tub within 13 minutes (Inlet valve screen clogged).',
+      'F01 E02': 'Motor Control Unit (MCU) Fault / Board micro-controller communication timeout.',
+      'F00 E05': 'Off-Balance Load / Tub suspension rods worn or load severely unbalanced.',
+    };
+
+    function calculateDecoder() {
+      if (!decoderResultCode || !decoderResultDesc) return;
+
+      var fSum = 0;
+      var eSum = 0;
+
+      decoderCheckboxes.forEach(function (chk) {
+        var bulb = chk.closest('.led-item').querySelector('.led-bulb');
+        if (chk.checked) {
+          bulb.classList.add('is-lit');
+          var weight = parseInt(chk.getAttribute('data-weight') || '0', 10);
+          var phase = chk.getAttribute('data-phase');
+          if (phase === 'F') fSum += weight;
+          if (phase === 'E') eSum += weight;
+        } else {
+          bulb.classList.remove('is-lit');
+        }
+      });
+
+      var codeStr = 'F' + (fSum < 10 ? '0' + fSum : fSum) + ' E' + (eSum < 10 ? '0' + eSum : eSum);
+      decoderResultCode.textContent = codeStr;
+
+      if (knownCodes[codeStr]) {
+        decoderResultDesc.textContent = knownCodes[codeStr];
+      } else if (fSum === 0 && eSum === 0) {
+        decoderResultDesc.textContent = 'Toggle the LEDs above to match your washer console.';
+      } else {
+        decoderResultDesc.textContent = 'Custom/Stored Diagnostic Code. Check model technical sheet.';
+      }
+    }
+
+    decoderCheckboxes.forEach(function (chk) {
+      chk.addEventListener('change', calculateDecoder);
+    });
+  }
+
+  // 6. Dynamic Table of Contents for Single Articles
+  var tocContainer = document.querySelector('.sidebar-toc');
+  var articleContent = document.querySelector('.entry-content');
+
+  if (tocContainer && articleContent) {
+    var headings = articleContent.querySelectorAll('h2, h3');
+    if (headings.length > 0) {
+      var tocList = document.createElement('ul');
+      tocList.className = 'toc-list';
+
+      headings.forEach(function (heading, index) {
+        if (!heading.id) {
+          heading.id = 'section-' + (index + 1);
+        }
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = '#' + heading.id;
+        a.textContent = heading.textContent;
+        li.appendChild(a);
+        tocList.appendChild(li);
+      });
+
+      tocContainer.innerHTML = '';
+      var tocTitle = document.createElement('h3');
+      tocTitle.className = 'sidebar-widget-title';
+      tocTitle.textContent = 'Table of Contents';
+      tocContainer.appendChild(tocTitle);
+      tocContainer.appendChild(tocList);
+    } else {
+      var parentWidget = tocContainer.closest('.sidebar-widget');
+      if (parentWidget) {
+        parentWidget.style.display = 'none';
+      }
+    }
+  }
+});
+
