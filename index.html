@@ -1,1 +1,818 @@
-test
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Fault & Fix – OEM Fault Codes & Appliance Diagnostics</title>
+<meta name="description" content="Fault and Fix is the authoritative OEM appliance fault clearinghouse. Verified fault codes, diagnostic test modes, reset procedures, and multimeter tests for Whirlpool, Maytag, Samsung, LG, GE, and Bosch appliances.">
+<meta name="theme-color" content="#0F172A">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" as="image" href="/wp-content/uploads/diagnostics/hero-desktop-bg.webp" media="(min-width: 768px)">
+<link rel="preload" as="image" href="/wp-content/uploads/diagnostics/hero-mobile-bg.webp" media="(max-width: 767px)">
+<link rel="preload" as="image" href="/wp-content/uploads/diagnostics/whirlpool-washer-diagnostic-mode.webp" type="image/webp" fetchpriority="high">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fault and Fix">
+<meta property="og:title" content="Fault & Fix – OEM Fault Codes & Appliance Diagnostics">
+<meta property="og:description" content="Fault and Fix is the authoritative OEM appliance fault clearinghouse. Verified fault codes, diagnostic test modes, reset procedures, and multimeter tests for Whirlpool, Maytag, Samsung, LG, GE, and Bosch appliances.">
+<meta property="og:url" content="https://faultandfix.com/">
+<meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://faultandfix.com/wp-content/uploads/diagnostics/whirlpool-washer-diagnostic-mode-1024x572.webp">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="572">
+  <meta name="twitter:image" content="https://faultandfix.com/wp-content/uploads/diagnostics/whirlpool-washer-diagnostic-mode-1024x572.webp">
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Fault and Fix &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Fault and Fix &raquo; Comments Feed" href="/comments/feed/" />
+
+
+
+<link rel="stylesheet" id="adc-theme-style-css" href="/wp-content/themes/appliance-diagnostic-clearinghouse/style.min.css?ver=1.0.1" media="all">
+<link rel="canonical" href="https://faultandfix.com/" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Fault and Fix",
+    "url": "https://faultandfix.com/",
+    "description": "OEM-Grounded Fault Codes, Reset Procedures &amp; Repair Diagnostics",
+    "knowsAbout": [
+        "Appliance Diagnostics",
+        "Washing Machine Error Codes",
+        "Whirlpool Fault Codes",
+        "Maytag Fault Codes",
+        "Appliance Repair Procedures"
+    ]
+}</script>
+</head>
+
+<body class="home wp-singular page-template-default page page-id-5 wp-embed-responsive wp-theme-appliance-diagnostic-clearinghouse">
+
+<a class="skip-link" href="#main-content">Skip to diagnostic content</a>
+
+<header class="site-header" role="banner">
+	<div class="site-container">
+		<div class="header-inner">
+			<a href="/" class="site-branding" rel="home">
+				<span class="brand-icon" aria-hidden="true">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+				</span>
+				<div>
+					<span class="brand-title">Fault and Fix</span>
+					<span class="brand-subtitle">Technical Appliance Reference</span>
+				</div>
+			</a>
+
+			<div class="header-search">
+				<form role="search" method="get" class="header-search-form" action="/"><label for="header-search-input" class="screen-reader-text">Search error code, brand, model</label><span class="header-search-icon" aria-hidden="true">
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+					</span>
+					<input id="header-search-input" type="search" class="header-search-input" placeholder="Search error code, brand, model..." value="" name="s" aria-label="Search error codes and guides">
+				</form>
+			</div>
+
+			<nav class="header-nav" aria-label="Primary Navigation">
+				<ul id="menu-primary-header-navigation" class="nav-menu"><li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19"><a href="/" aria-current="page">Home</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a href="/category/washing-machines/">Washing Machines</a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21"><a href="/category/dryers/">Dryers</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-taxonomy menu-item-object-appliance_brand menu-item-22"><a href="/brand/whirlpool/">Whirlpool</a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-taxonomy menu-item-object-appliance_brand menu-item-23"><a href="/brand/maytag/">Maytag</a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="/about/">About</a></li>
+</ul>			</nav>
+
+			<div class="header-actions">
+				<button class="btn-icon btn-mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+					<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Mobile Navigation Drawer -->
+	<div class="mobile-drawer" role="region" aria-label="Mobile Navigation Drawer">
+		<form role="search" method="get" class="header-search-form" style="display:flex; margin-bottom:1rem;" action="/">
+			<input id="header-search-input" type="search" class="header-search-input" placeholder="Search error code, brand, model..." value="" name="s" aria-label="Search error codes and guides">
+		</form>
+		<nav aria-label="Mobile Menu">
+			<ul id="menu-primary-header-navigation-1" class="mobile-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19"><a href="/" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a href="/category/washing-machines/">Washing Machines</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21"><a href="/category/dryers/">Dryers</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-appliance_brand menu-item-22"><a href="/brand/whirlpool/">Whirlpool</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-appliance_brand menu-item-23"><a href="/brand/maytag/">Maytag</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="/about/">About</a></li>
+</ul>		</nav>
+	</div>
+</header>
+<main id="main-content" tabindex="-1">
+
+<!-- 1. Search-Focused Introductory Section -->
+<section class="hero-search-section" aria-label="Appliance Diagnostic Search">
+	<div class="site-container">
+		<div class="hero-content">
+			<span class="hero-pill">
+				<svg width="12" height="12" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+				OEM Service Manual Grounded			</span>
+			<h1 class="hero-title">Appliance Error Codes, Explained.</h1>
+			<p class="hero-description">Find manufacturer-specific error meanings, verified reset procedures, troubleshooting steps, and compatible replacement parts without promotional clutter.</p>
+
+			<form role="search" method="get" class="hero-search-bar" action="/">
+				<div class="hero-search-input-wrap"><label for="hero-search-input" class="screen-reader-text">Search an error code, brand, or model number</label><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+					<input id="hero-search-input" type="search" class="hero-search-input" name="s" placeholder="Search an error code, brand, or model number..." value="" required aria-label="Search appliance error codes">
+				</div>
+				<button type="submit" class="hero-search-btn">Lookup Diagnostic</button>
+			</form>
+
+			<div class="hero-tags">
+				<span>Popular Lookups:</span>
+				<a href="/?s=F02+E01" class="hero-tag-link">F02 E01</a>
+				<a href="/?s=5C" class="hero-tag-link">Samsung 5C</a>
+				<a href="/?s=OE" class="hero-tag-link">LG OE</a>
+				<a href="/?s=E15" class="hero-tag-link">Bosch E15</a>
+				<a href="/?s=Motor+Inverter" class="hero-tag-link">GE 6-Lid Reset</a>
+				<a href="/?s=Diagnostic+Mode" class="hero-tag-link">Diagnostic Mode</a>
+			</div>
+
+			<!-- Interactive Diagnostic & Code Decoder Station (1-Second Attention Hook) -->
+			<div class="diagnostic-simulator-card" aria-label="Interactive Diagnostic Simulator">
+				<div class="sim-header-wrap">
+					<div class="sim-title">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+						<span>Instant Diagnostic &amp; Reset Station</span>
+					</div>
+					<span class="sim-badge">Interactive Tool (Whirlpool / Maytag)</span>
+				</div>
+
+				<div class="sim-tabs" role="tablist">
+					<button type="button" class="sim-tab-btn is-active" data-target="panel-dial-simulator">
+						1. Rotary Dial Test Sequence					</button>
+					<button type="button" class="sim-tab-btn" data-target="panel-binary-decoder">
+						2. Binary LED Code Decoder					</button>
+				</div>
+
+				<!-- Panel 1: Dial Simulator -->
+				<div class="sim-panel is-active" id="panel-dial-simulator">
+					<div class="dial-stage">
+						<div class="dial-graphic-wrap" id="dial-visual">
+							<div class="dial-knob-indicator"></div>
+							<div class="dial-center-dot"></div>
+						</div>
+
+						<div class="led-strip">
+							<div class="led-item">
+								<div class="led-bulb dial-led" id="led-sensing"></div>
+								<span class="led-label">Sensing</span>
+							</div>
+							<div class="led-item">
+								<div class="led-bulb dial-led" id="led-wash"></div>
+								<span class="led-label">Wash</span>
+							</div>
+							<div class="led-item">
+								<div class="led-bulb dial-led" id="led-rinse"></div>
+								<span class="led-label">Rinse</span>
+							</div>
+							<div class="led-item">
+								<div class="led-bulb dial-led" id="led-spin"></div>
+								<span class="led-label">Spin</span>
+							</div>
+							<div class="led-item">
+								<div class="led-bulb dial-led" id="led-done"></div>
+								<span class="led-label">Done</span>
+							</div>
+						</div>
+
+						<div class="sim-feedback-box">
+							<div class="sim-step-indicator">Step 1 of 6</div>
+							<div class="sim-instruction">Turn knob <strong>1 click LEFT</strong> (Counter-Clockwise)</div>
+						</div>
+
+						<div class="dial-controls">
+							<button type="button" class="dial-btn btn-dial-left">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+								Click Left (CCW)							</button>
+							<button type="button" class="dial-btn btn-dial-right">
+								Click Right (CW)								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+							</button>
+							<button type="button" class="dial-btn dial-btn-reset btn-dial-reset">
+								Reset Timer							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Panel 2: Binary LED Decoder -->
+				<div class="sim-panel" id="panel-binary-decoder">
+					<p style="font-size:13px; color:var(--color-text-secondary); margin-bottom:10px;">
+						Check the boxes below corresponding to the green indicator lights illuminated on your washer control console:					</p>
+					<div class="decoder-grid">
+						<div class="decoder-led-selectors">
+							<div style="font-weight:700; font-size:12px; text-transform:uppercase; color:var(--color-text-muted); margin-bottom:8px;">Active Console LEDs:</div>
+							<div class="led-strip" style="justify-content:space-around; margin:0 0 10px;">
+								<label class="led-item">
+									<input type="checkbox" class="decoder-chk" data-weight="8" data-phase="F">
+									<div class="led-bulb"></div>
+									<span class="led-label">Sensing (8)</span>
+								</label>
+								<label class="led-item">
+									<input type="checkbox" class="decoder-chk" data-weight="4" data-phase="F">
+									<div class="led-bulb"></div>
+									<span class="led-label">Wash (4)</span>
+								</label>
+								<label class="led-item">
+									<input type="checkbox" class="decoder-chk" data-weight="2" data-phase="F" checked>
+									<div class="led-bulb is-lit"></div>
+									<span class="led-label">Rinse (2)</span>
+								</label>
+								<label class="led-item">
+									<input type="checkbox" class="decoder-chk" data-weight="1" data-phase="E" checked>
+									<div class="led-bulb is-lit"></div>
+									<span class="led-label">Spin (1)</span>
+								</label>
+							</div>
+						</div>
+
+						<div class="decoder-result-box">
+							<span style="font-size:11px; font-weight:800; text-transform:uppercase; color:var(--color-accent); letter-spacing:0.05em;">Calculated Diagnostic Code:</span>
+							<div class="decoder-result-code">F02 E01</div>
+							<div class="decoder-result-desc">Long Drain Timeout / Drain pump restriction or clogged coin trap.</div>
+							<a href="/whirlpool-cabrio-washer-f02-e01-error-code/" style="margin-top:8px; font-size:12px; font-weight:700; text-decoration:none;" class="hero-tag-link">
+								Open Full F02 E01 Step-by-Step Fix &rarr;							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 1.5. Featured Field Diagnostic Spotlight Banner -->
+<section class="home-section" style="padding-top:2.5rem; padding-bottom:1rem;" aria-label="Featured Diagnostic Spotlight">
+	<div class="site-container">
+		<div style="background:var(--color-bg); border:1px solid var(--color-border); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md);" class="spotlight-card">
+			<div style="display:grid; grid-template-columns:1fr; align-items:center;" class="spotlight-grid">
+				<!-- High-Resolution Real Field Photograph -->
+				<div style="position:relative; height:100%; min-height:280px; overflow:hidden; background:#0F172A;">
+					<picture style="display:block; width:100%; height:100%;">
+						<source srcset="/wp-content/uploads/diagnostics/whirlpool-washer-diagnostic-mode.webp" type="image/webp">
+						<img src="/wp-content/uploads/diagnostics/whirlpool-washer-diagnostic-mode.webp" width="600" height="400" alt="Whirlpool Top Load Washer Diagnostic Control Console" style="width:100%; height:100%; object-fit:cover; display:block;" loading="eager" fetchpriority="high" decoding="async">
+					</picture>
+					<div style="position:absolute; bottom:14px; left:14px; background:rgba(15,23,42,0.85); backdrop-filter:blur(6px); color:#FFFFFF; font-size:11px; font-weight:700; padding:5px 12px; border-radius:4px; text-transform:uppercase; letter-spacing:0.05em; display:flex; align-items:center; gap:6px;">
+						<span style="width:8px; height:8px; border-radius:50%; background:#22C55E; display:inline-block;"></span>
+						Factory Diagnostic Routine					</div>
+				</div>
+				<!-- Right Content -->
+				<div style="padding:2rem 2.25rem;">
+					<div style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:800; text-transform:uppercase; color:var(--color-accent); letter-spacing:0.05em; margin-bottom:8px;">
+						<span>Pillar Diagnostic Guide</span> &bull; <span>Whirlpool / Maytag</span>
+					</div>
+					<h2 style="font-size:1.6rem; font-weight:900; line-height:1.3; margin-bottom:0.75rem; color:var(--color-text);">
+						<a href="/whirlpool-cabrio-washing-machine-how-to-enter-diagnostic-mode/" style="color:var(--color-text); text-decoration:none;">
+							How to Enter Diagnostic Mode &amp; Decode Binary LED Error Codes						</a>
+					</h2>
+					<p style="font-size:15px; color:var(--color-text-secondary); line-height:1.6; margin-bottom:1.5rem;">
+						Modern top-load washers use 5 binary status LEDs (Sensing, Wash, Rinse, Spin, Done) instead of numeric screens. Learn the factory 6-turn dial sequence to force fault code recall and trigger automatic tub recalibration in under 3 minutes.					</p>
+					<div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+						<a href="/whirlpool-cabrio-washing-machine-how-to-enter-diagnostic-mode/" class="hero-search-btn" style="text-decoration:none; padding:10px 20px; font-size:14px;">
+							Open Dial Sequence &amp; Decoder &rarr;						</a>
+						<a href="/whirlpool-cabrio-washer-f02-e01-error-code/" class="dial-btn" style="text-decoration:none; padding:10px 18px; font-size:13px;">
+							F02 E01 Long Drain Guide &rarr;						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 2. Browse by Appliance Category -->
+<section class="home-section" aria-label="Browse by Appliance Category">
+	<div class="site-container">
+		<div class="section-header">
+			<div class="section-heading-wrap">
+				<h2>Browse by Appliance</h2>
+				<p class="section-subtitle">Select your appliance category to explore verified fault code libraries.</p>
+			</div>
+			<a href="/category/washing-machines/" class="section-link">View All Categories &rarr;</a>
+		</div>
+
+		<div class="grid-categories">
+			<a href="/category/washing-machines/" class="category-card">
+				<div class="category-icon" aria-hidden="true">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="13" r="5"></circle><line x1="8" y1="6" x2="8.01" y2="6"></line><line x1="12" y1="6" x2="12.01" y2="6"></line></svg>
+				</div>
+				<div>
+					<div class="category-title">Washing Machines</div>
+					<div class="category-count">Top-load &amp; front-load diagnostic guides</div>
+				</div>
+			</a>
+
+			<a href="/category/dryers/" class="category-card">
+				<div class="category-icon" aria-hidden="true">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="13" r="5"></circle><path d="M12 11c1 1 2 2 3 1"></path></svg>
+				</div>
+				<div>
+					<div class="category-title">Clothes Dryers</div>
+					<div class="category-count">Gas &amp; electric heating/thermal cutoff guides</div>
+				</div>
+			</a>
+
+			<a href="/category/refrigerators/" class="category-card">
+				<div class="category-icon" aria-hidden="true">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="5" y1="10" x2="19" y2="10"></line><line x1="9" y1="6" x2="9" y2="8"></line><line x1="9" y1="14" x2="9" y2="16"></line></svg>
+				</div>
+				<div>
+					<div class="category-title">Refrigerators</div>
+					<div class="category-count">Defrost cycles, sensors &amp; compressor faults</div>
+				</div>
+			</a>
+
+			<a href="/category/dishwashers/" class="category-card">
+				<div class="category-icon" aria-hidden="true">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M7 8h10M7 12h10M7 16h6"></path></svg>
+				</div>
+				<div>
+					<div class="category-title">Dishwashers</div>
+					<div class="category-count">Fill valves, float switches &amp; circulation pumps</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- 3. Browse by Manufacturer -->
+<section class="home-section home-section-alt" aria-label="Browse by Manufacturer">
+	<div class="site-container">
+		<div class="section-header">
+			<div class="section-heading-wrap">
+				<h2>Browse by Manufacturer</h2>
+				<p class="section-subtitle">Dedicated diagnostic databases organized by OEM brand architecture.</p>
+			</div>
+		</div>
+
+		<div class="grid-brands">
+			<a href="/brand/whirlpool/" class="brand-card">
+				<span class="brand-name">Whirlpool</span>
+				<span class="brand-meta">Cabrio, Duet & Top-Load</span>
+			</a>
+			<a href="/brand/maytag/" class="brand-card">
+				<span class="brand-name">Maytag</span>
+				<span class="brand-meta">Bravos, Centennial & MCT</span>
+			</a>
+			<a href="/brand/samsung/" class="brand-card">
+				<span class="brand-name">Samsung</span>
+				<span class="brand-meta">VRT Plus & Smart Care</span>
+			</a>
+			<a href="/brand/lg/" class="brand-card">
+				<span class="brand-name">LG Electronics</span>
+				<span class="brand-meta">DirectDrive & SmartDiagnosis</span>
+			</a>
+			<a href="/brand/ge/" class="brand-card">
+				<span class="brand-name">GE Appliances</span>
+				<span class="brand-meta">Profile, UltraFresh & Hydrowave</span>
+			</a>
+			<a href="/brand/bosch/" class="brand-card">
+				<span class="brand-name">Bosch</span>
+				<span class="brand-meta">300, 500 & 800 Series</span>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- 4. Popular Error Codes Quick Lookup -->
+<section class="home-section" aria-label="Popular Error Codes">
+	<div class="site-container">
+		<div class="section-header">
+			<div class="section-heading-wrap">
+				<h2>High-Frequency Error Codes</h2>
+				<p class="section-subtitle">Immediate answers for the most common washer and appliance fault codes.</p>
+			</div>
+		</div>
+
+		<div class="grid-error-codes">
+			<div class="error-code-card">
+				<div>
+					<div class="ecc-header">
+						<span class="ecc-badge">F02 E01</span>
+						<span class="ecc-brand">Whirlpool / Maytag</span>
+					</div>
+					<h3 class="ecc-meaning">Long Drain / Drain Pump Restriction</h3>
+					<p class="ecc-symptom">Washer stops mid-cycle with standing water; drain pump hums or times out after 8 minutes.</p>
+				</div>
+				<a href="/whirlpool-cabrio-washer-f02-e01-error-code/" class="ecc-action-prompt">
+					View Step-by-Step Drain Fix &rarr;				</a>
+			</div>
+
+			<div class="error-code-card">
+				<div>
+					<div class="ecc-header">
+						<span class="ecc-badge">5C / 5E</span>
+						<span class="ecc-brand">Samsung VRT Plus</span>
+					</div>
+					<h3 class="ecc-meaning">Drain Timeout / Filter Clog</h3>
+					<p class="ecc-symptom">Washer halts full of water, door locks, and alarm chimes; debris filter blocked or pump coil failure.</p>
+				</div>
+				<a href="/samsung-washer-error-code-5c-5e-drain-fix/" class="ecc-action-prompt">
+					View 30-Sec Trap Cleanout &rarr;				</a>
+			</div>
+
+			<div class="error-code-card">
+				<div>
+					<div class="ecc-header">
+						<span class="ecc-badge">OE</span>
+						<span class="ecc-brand">LG Electronics</span>
+					</div>
+					<h3 class="ecc-meaning">Water Not Draining / Pump Jammed</h3>
+					<p class="ecc-symptom">Tub fails to empty below 24.8 kHz frequency within 10 minutes; lower-front coin trap obstruction.</p>
+				</div>
+				<a href="/lg-washer-error-code-oe-drain-pump-cleanout/" class="ecc-action-prompt">
+					View Coin Trap Cleanout &rarr;				</a>
+			</div>
+
+			<div class="error-code-card">
+				<div>
+					<div class="ecc-header">
+						<span class="ecc-badge">LE</span>
+						<span class="ecc-brand">LG DirectDrive</span>
+					</div>
+					<h3 class="ecc-meaning">Motor Hall Sensor / Locked Rotor</h3>
+					<p class="ecc-symptom">Drum jerks an inch and halts; Rotor Position Sensor (RPS) signal pulse missing or coil open.</p>
+				</div>
+				<a href="/lg-washer-error-code-le-hall-sensor-reset/" class="ecc-action-prompt">
+					View Hall Sensor Test &amp; Reset &rarr;				</a>
+			</div>
+
+			<div class="error-code-card">
+				<div>
+					<div class="ecc-header">
+						<span class="ecc-badge">Inverter Flashes</span>
+						<span class="ecc-brand">GE Appliances</span>
+					</div>
+					<h3 class="ecc-meaning">Motor Lockout / Mode Shifter Fault</h3>
+					<p class="ecc-symptom">Washer fills but will not agitate or spin; motor inverter LED flashes error code under tub.</p>
+				</div>
+				<a href="/ge-washer-reset-procedure-motor-inverter-flash-codes/" class="ecc-action-prompt">
+					View GE 6-Lid Reset Sequence &rarr;				</a>
+			</div>
+
+			<div class="error-code-card">
+				<div>
+					<div class="ecc-header">
+						<span class="ecc-badge">E15</span>
+						<span class="ecc-brand">Bosch 500 / 800</span>
+					</div>
+					<h3 class="ecc-meaning">AquaStop Flood Switch Triggered</h3>
+					<p class="ecc-symptom">Faucet icon blinks and drain pump runs continuously 24/7; standing water pooled in base pan.</p>
+				</div>
+				<a href="/bosch-dishwasher-error-code-e15-meaning-reset-fix/" class="ecc-action-prompt">
+					View Base Pan Reset &amp; Gasket Fix &rarr;				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 5. Recently Published Troubleshooting Guides (Blocksy Editorial Card Layout) -->
+<section class="home-section home-section-alt" aria-label="Recent Diagnostic Guides">
+	<div class="site-container">
+		<div class="section-header">
+			<div class="section-heading-wrap">
+				<h2>Recently Verified Diagnostic Guides</h2>
+				<p class="section-subtitle">Peer-reviewed troubleshooting walkthroughs grounded in OEM service bulletins.</p>
+			</div>
+		</div>
+
+		<div class="grid-articles">
+								<article class="article-card">
+													<div class="article-card-image" style="position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--color-bg-secondary); border-bottom:1px solid var(--color-border);">
+								<a href="/electric-dryer-wont-heat-thermal-fuse-heating-element-test/" tabindex="-1" aria-hidden="true" style="display:block; width:100%; height:100%;">
+									<img loading="lazy" width="768" height="429" src="/wp-content/uploads/diagnostics/dryer-heating-element-thermal-fuse-test-768x429.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="Electric dryer heating element and thermal fuse multimeter continuity test" style="width:100%; height:100%; object-fit:cover; transition:transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); display:block;" decoding="async" srcset="/wp-content/uploads/diagnostics/dryer-heating-element-thermal-fuse-test-768x429.webp 768w, /wp-content/uploads/diagnostics/dryer-heating-element-thermal-fuse-test-300x167.webp 300w, /wp-content/uploads/diagnostics/dryer-heating-element-thermal-fuse-test-1024x572.webp 1024w, /wp-content/uploads/diagnostics/dryer-heating-element-thermal-fuse-test.webp 1376w" sizes="(max-width: 768px) 100vw, 768px" />								</a>
+							</div>
+												<div class="article-card-header">
+							<div class="article-card-badge-row">
+								<a href="/category/dryers/" class="article-category-badge">Dryers</a>
+																	<span class="ecc-badge" style="font-size:11px; padding:2px 6px;">No Heat / Cold Tumbling</span>
+																<span class="article-reading-time">4 min read</span>
+							</div>
+							<h3 class="article-card-title">
+								<a href="/electric-dryer-wont-heat-thermal-fuse-heating-element-test/">Electric Dryer Won&#8217;t Heat: Thermal Fuse &#038; Heating Element Multimeter Continuity Test Guide</a>
+							</h3>
+						</div>
+						<div class="article-card-body">
+							<p class="article-card-excerpt">When an electric clothes dryer runs, tumbles smoothly, but produces zero heat—leaving clothes damp and freezing cold after a 60-minute cycle—homeowners often...</p>
+							<div class="article-card-footer">
+								<div class="article-author-info">
+									<span>admin</span>
+								</div>
+								<time datetime="2026-10-13T17:39:19+00:00">Oct 13, 2026</time>
+							</div>
+						</div>
+					</article>
+										<article class="article-card">
+													<div class="article-card-image" style="position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--color-bg-secondary); border-bottom:1px solid var(--color-border);">
+								<a href="/samsung-refrigerator-error-code-22e-fan-motor-fix/" tabindex="-1" aria-hidden="true" style="display:block; width:100%; height:100%;">
+									<img loading="lazy" width="768" height="429" src="/wp-content/uploads/diagnostics/samsung-fridge-evaporator-fan-diagnostic-768x429.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="Samsung refrigerator evaporator fan motor diagnostic inspection" style="width:100%; height:100%; object-fit:cover; transition:transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); display:block;" decoding="async" srcset="/wp-content/uploads/diagnostics/samsung-fridge-evaporator-fan-diagnostic-768x429.webp 768w, /wp-content/uploads/diagnostics/samsung-fridge-evaporator-fan-diagnostic-300x167.webp 300w, /wp-content/uploads/diagnostics/samsung-fridge-evaporator-fan-diagnostic-1024x572.webp 1024w, /wp-content/uploads/diagnostics/samsung-fridge-evaporator-fan-diagnostic.webp 1376w" sizes="(max-width: 768px) 100vw, 768px" />								</a>
+							</div>
+												<div class="article-card-header">
+							<div class="article-card-badge-row">
+								<a href="/category/refrigerators/" class="article-category-badge">Refrigerators</a>
+																	<span class="ecc-badge" style="font-size:11px; padding:2px 6px;">22E / 22C</span>
+																<span class="article-reading-time">4 min read</span>
+							</div>
+							<h3 class="article-card-title">
+								<a href="/samsung-refrigerator-error-code-22e-fan-motor-fix/">Samsung Refrigerator Error Code 22E (22C): Fresh Food Fan Motor Diagnostic &#038; Ice Clearance</a>
+							</h3>
+						</div>
+						<div class="article-card-body">
+							<p class="article-card-excerpt">Error code 22E (or 22C / segment code 22) on a Samsung French Door refrigerator signals a Fresh Food Evaporator Fan Motor...</p>
+							<div class="article-card-footer">
+								<div class="article-author-info">
+									<span>admin</span>
+								</div>
+								<time datetime="2026-10-13T17:39:18+00:00">Oct 13, 2026</time>
+							</div>
+						</div>
+					</article>
+										<article class="article-card">
+													<div class="article-card-image" style="position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--color-bg-secondary); border-bottom:1px solid var(--color-border);">
+								<a href="/bosch-dishwasher-error-code-e24-e25-drain-impeller-fix/" tabindex="-1" aria-hidden="true" style="display:block; width:100%; height:100%;">
+									<img loading="lazy" width="768" height="429" src="/wp-content/uploads/diagnostics/bosch-dishwasher-e24-impeller-cover-768x429.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="Bosch dishwasher drain pump impeller cover cleanout" style="width:100%; height:100%; object-fit:cover; transition:transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); display:block;" decoding="async" srcset="/wp-content/uploads/diagnostics/bosch-dishwasher-e24-impeller-cover-768x429.webp 768w, /wp-content/uploads/diagnostics/bosch-dishwasher-e24-impeller-cover-300x167.webp 300w, /wp-content/uploads/diagnostics/bosch-dishwasher-e24-impeller-cover-1024x572.webp 1024w, /wp-content/uploads/diagnostics/bosch-dishwasher-e24-impeller-cover.webp 1376w" sizes="(max-width: 768px) 100vw, 768px" />								</a>
+							</div>
+												<div class="article-card-header">
+							<div class="article-card-badge-row">
+								<a href="/category/dishwashers/" class="article-category-badge">Dishwashers</a>
+																	<span class="ecc-badge" style="font-size:11px; padding:2px 6px;">E24 / E25</span>
+																<span class="article-reading-time">4 min read</span>
+							</div>
+							<h3 class="article-card-title">
+								<a href="/bosch-dishwasher-error-code-e24-e25-drain-impeller-fix/">Bosch Dishwasher Error Code E24 / E25: Drain Pump Blocked &#038; Check Valve Clearance Fix</a>
+							</h3>
+						</div>
+						<div class="article-card-body">
+							<p class="article-card-excerpt">Error code E24 or E25 indicates a Drain Water Evacuation Failure on Bosch dishwashers. During the initial 2-minute cycle start or between...</p>
+							<div class="article-card-footer">
+								<div class="article-author-info">
+									<span>admin</span>
+								</div>
+								<time datetime="2026-10-13T17:27:59+00:00">Oct 13, 2026</time>
+							</div>
+						</div>
+					</article>
+										<article class="article-card">
+													<div class="article-card-image" style="position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--color-bg-secondary); border-bottom:1px solid var(--color-border);">
+								<a href="/bosch-dishwasher-error-code-e15-meaning-reset-fix/" tabindex="-1" aria-hidden="true" style="display:block; width:100%; height:100%;">
+									<img loading="lazy" width="768" height="429" src="/wp-content/uploads/diagnostics/bosch-dishwasher-e15-base-pan-768x429.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="Bosch dishwasher E15 base pan flood switch reset" style="width:100%; height:100%; object-fit:cover; transition:transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); display:block;" decoding="async" srcset="/wp-content/uploads/diagnostics/bosch-dishwasher-e15-base-pan-768x429.webp 768w, /wp-content/uploads/diagnostics/bosch-dishwasher-e15-base-pan-300x167.webp 300w, /wp-content/uploads/diagnostics/bosch-dishwasher-e15-base-pan-1024x572.webp 1024w, /wp-content/uploads/diagnostics/bosch-dishwasher-e15-base-pan.webp 1376w" sizes="(max-width: 768px) 100vw, 768px" />								</a>
+							</div>
+												<div class="article-card-header">
+							<div class="article-card-badge-row">
+								<a href="/category/dishwashers/" class="article-category-badge">Dishwashers</a>
+																	<span class="ecc-badge" style="font-size:11px; padding:2px 6px;">E15</span>
+																<span class="article-reading-time">5 min read</span>
+							</div>
+							<h3 class="article-card-title">
+								<a href="/bosch-dishwasher-error-code-e15-meaning-reset-fix/">Bosch Dishwasher Error Code E15: Meaning, Base Pan Water Reset &#038; Sump Gasket Repair</a>
+							</h3>
+						</div>
+						<div class="article-card-body">
+							<p class="article-card-excerpt">Error code E15 with a flashing faucet indicator icon is the single most widely searched dishwasher error code in the appliance industry....</p>
+							<div class="article-card-footer">
+								<div class="article-author-info">
+									<span>admin</span>
+								</div>
+								<time datetime="2026-10-13T17:27:58+00:00">Oct 13, 2026</time>
+							</div>
+						</div>
+					</article>
+										<article class="article-card">
+													<div class="article-card-image" style="position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--color-bg-secondary); border-bottom:1px solid var(--color-border);">
+								<a href="/ge-dishwasher-blinking-start-light-reset-door-latch/" tabindex="-1" aria-hidden="true" style="display:block; width:100%; height:100%;">
+									<img loading="lazy" width="768" height="429" src="/wp-content/uploads/diagnostics/ge-dishwasher-door-latch-microswitch-768x429.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="GE dishwasher door latch switch diagnostic testing" style="width:100%; height:100%; object-fit:cover; transition:transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); display:block;" decoding="async" srcset="/wp-content/uploads/diagnostics/ge-dishwasher-door-latch-microswitch-768x429.webp 768w, /wp-content/uploads/diagnostics/ge-dishwasher-door-latch-microswitch-300x167.webp 300w, /wp-content/uploads/diagnostics/ge-dishwasher-door-latch-microswitch-1024x572.webp 1024w, /wp-content/uploads/diagnostics/ge-dishwasher-door-latch-microswitch.webp 1376w" sizes="(max-width: 768px) 100vw, 768px" />								</a>
+							</div>
+												<div class="article-card-header">
+							<div class="article-card-badge-row">
+								<a href="/category/dishwashers/" class="article-category-badge">Dishwashers</a>
+																	<span class="ecc-badge" style="font-size:11px; padding:2px 6px;">Blinking Start / 888</span>
+																<span class="article-reading-time">4 min read</span>
+							</div>
+							<h3 class="article-card-title">
+								<a href="/ge-dishwasher-blinking-start-light-reset-door-latch/">GE Dishwasher Blinking Start Light &#038; Won&#8217;t Start: CSM Tripped Reset &#038; Door Latch Test</a>
+							</h3>
+						</div>
+						<div class="article-card-body">
+							<p class="article-card-excerpt">A flashing green or amber START light on a GE dishwasher accompanied by three intermittent beeps is one of the most frustrating...</p>
+							<div class="article-card-footer">
+								<div class="article-author-info">
+									<span>admin</span>
+								</div>
+								<time datetime="2026-10-13T17:27:58+00:00">Oct 13, 2026</time>
+							</div>
+						</div>
+					</article>
+										<article class="article-card">
+													<div class="article-card-image" style="position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--color-bg-secondary); border-bottom:1px solid var(--color-border);">
+								<a href="/ge-washer-reset-procedure-motor-inverter-flash-codes/" tabindex="-1" aria-hidden="true" style="display:block; width:100%; height:100%;">
+									<img loading="lazy" width="768" height="429" src="/wp-content/uploads/diagnostics/ge-washer-motor-inverter-board-768x429.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="GE washing machine motor inverter control board flash code LED" style="width:100%; height:100%; object-fit:cover; transition:transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); display:block;" decoding="async" srcset="/wp-content/uploads/diagnostics/ge-washer-motor-inverter-board-768x429.webp 768w, /wp-content/uploads/diagnostics/ge-washer-motor-inverter-board-300x167.webp 300w, /wp-content/uploads/diagnostics/ge-washer-motor-inverter-board-1024x572.webp 1024w, /wp-content/uploads/diagnostics/ge-washer-motor-inverter-board.webp 1376w" sizes="(max-width: 768px) 100vw, 768px" />								</a>
+							</div>
+												<div class="article-card-header">
+							<div class="article-card-badge-row">
+								<a href="/category/washing-machines/" class="article-category-badge">Washing Machines</a>
+																	<span class="ecc-badge" style="font-size:11px; padding:2px 6px;">Motor Inverter Flashes / E22</span>
+																<span class="article-reading-time">4 min read</span>
+							</div>
+							<h3 class="article-card-title">
+								<a href="/ge-washer-reset-procedure-motor-inverter-flash-codes/">GE Washer Reset Procedure &#038; Motor Inverter Flash Codes: 6-Lid Open Reset &#038; Diagnostic Mode</a>
+							</h3>
+						</div>
+						<div class="article-card-body">
+							<p class="article-card-excerpt">When a GE top-load washing machine (including Hydrowave, GTW, and Profile series) fills with water but refuses to agitate or spin, homeowners...</p>
+							<div class="article-card-footer">
+								<div class="article-author-info">
+									<span>admin</span>
+								</div>
+								<time datetime="2026-10-13T17:27:57+00:00">Oct 13, 2026</time>
+							</div>
+						</div>
+					</article>
+										<article class="article-card">
+													<div class="article-card-image" style="position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--color-bg-secondary); border-bottom:1px solid var(--color-border);">
+								<a href="/lg-washer-error-code-le-hall-sensor-reset/" tabindex="-1" aria-hidden="true" style="display:block; width:100%; height:100%;">
+									<img loading="lazy" width="768" height="429" src="/wp-content/uploads/diagnostics/lg-washer-rotor-position-sensor-768x429.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="LG washer Hall sensor rotor position test" style="width:100%; height:100%; object-fit:cover; transition:transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); display:block;" decoding="async" srcset="/wp-content/uploads/diagnostics/lg-washer-rotor-position-sensor-768x429.webp 768w, /wp-content/uploads/diagnostics/lg-washer-rotor-position-sensor-300x167.webp 300w, /wp-content/uploads/diagnostics/lg-washer-rotor-position-sensor-1024x572.webp 1024w, /wp-content/uploads/diagnostics/lg-washer-rotor-position-sensor.webp 1376w" sizes="(max-width: 768px) 100vw, 768px" />								</a>
+							</div>
+												<div class="article-card-header">
+							<div class="article-card-badge-row">
+								<a href="/category/washing-machines/" class="article-category-badge">Washing Machines</a>
+																	<span class="ecc-badge" style="font-size:11px; padding:2px 6px;">LE</span>
+																<span class="article-reading-time">4 min read</span>
+							</div>
+							<h3 class="article-card-title">
+								<a href="/lg-washer-error-code-le-hall-sensor-reset/">LG Washer Error Code LE: Motor Hall Sensor (RPS) Test &#038; 30-Sec Direct Drive Reset</a>
+							</h3>
+						</div>
+						<div class="article-card-body">
+							<p class="article-card-excerpt">Error code LE (Locked Drive / Motor Error) is the single most common hardware failure code on LG Direct Drive washing machines....</p>
+							<div class="article-card-footer">
+								<div class="article-author-info">
+									<span>admin</span>
+								</div>
+								<time datetime="2026-10-13T17:27:56+00:00">Oct 13, 2026</time>
+							</div>
+						</div>
+					</article>
+										<article class="article-card">
+													<div class="article-card-image" style="position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--color-bg-secondary); border-bottom:1px solid var(--color-border);">
+								<a href="/lg-washer-error-code-oe-drain-pump-cleanout/" tabindex="-1" aria-hidden="true" style="display:block; width:100%; height:100%;">
+									<img loading="lazy" width="768" height="429" src="/wp-content/uploads/diagnostics/lg-washer-coin-trap-cleanout-768x429.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="LG washer front coin trap drain pump cleanout" style="width:100%; height:100%; object-fit:cover; transition:transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); display:block;" decoding="async" srcset="/wp-content/uploads/diagnostics/lg-washer-coin-trap-cleanout-768x429.webp 768w, /wp-content/uploads/diagnostics/lg-washer-coin-trap-cleanout-300x167.webp 300w, /wp-content/uploads/diagnostics/lg-washer-coin-trap-cleanout-1024x572.webp 1024w, /wp-content/uploads/diagnostics/lg-washer-coin-trap-cleanout.webp 1376w" sizes="(max-width: 768px) 100vw, 768px" />								</a>
+							</div>
+												<div class="article-card-header">
+							<div class="article-card-badge-row">
+								<a href="/category/washing-machines/" class="article-category-badge">Washing Machines</a>
+																	<span class="ecc-badge" style="font-size:11px; padding:2px 6px;">OE</span>
+																<span class="article-reading-time">4 min read</span>
+							</div>
+							<h3 class="article-card-title">
+								<a href="/lg-washer-error-code-oe-drain-pump-cleanout/">LG Washer Error Code OE: Meaning, Emergency Coin Trap Cleanout &#038; Drain Pump Resistance Fix</a>
+							</h3>
+						</div>
+						<div class="article-card-body">
+							<p class="article-card-excerpt">Error code OE on an LG front-load or top-load washing machine stands for Output Error / Drain Failure. The main PCB initiates...</p>
+							<div class="article-card-footer">
+								<div class="article-author-info">
+									<span>admin</span>
+								</div>
+								<time datetime="2026-10-13T17:27:56+00:00">Oct 13, 2026</time>
+							</div>
+						</div>
+					</article>
+							</div>
+	</div>
+</section>
+
+<!-- 6. Trust, Safety & Verification Methodology -->
+<section class="trust-section" aria-label="Editorial &amp; Verification Standards">
+	<div class="site-container">
+		<div class="trust-card">
+			<div class="trust-intro">
+				<h3>Engineered for Clarity &amp; Safety</h3>
+				<p>We do not publish unverified blog advice or AI-hallucinated repair steps. Every diagnostic guide in our clearinghouse is verified against official technical service manuals and factory tech sheets.</p>
+			</div>
+			<div class="trust-points-grid">
+				<div class="trust-point">
+					<div class="trust-point-icon" aria-hidden="true">
+						<svg width="22" height="22" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+					</div>
+					<div class="trust-point-text">
+						<strong>Verified OEM Sources</strong>
+						<p>Resistance values, cycle timings, and diagnostic mode keypress sequences are verified from original factory wiring diagrams.</p>
+					</div>
+				</div>
+
+				<div class="trust-point">
+					<div class="trust-point-icon" aria-hidden="true">
+						<svg width="22" height="22" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.381z" clip-rule="evenodd"></path></svg>
+					</div>
+					<div class="trust-point-text">
+						<strong>Immediate First Answer</strong>
+						<p>No 2,000-word fluff intros before the answer. The exact fault meaning and immediate safe action appear at the very top of each article.</p>
+					</div>
+				</div>
+
+				<div class="trust-point">
+					<div class="trust-point-icon" aria-hidden="true">
+						<svg width="22" height="22" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+					</div>
+					<div class="trust-point-text">
+						<strong>High-Voltage Safety First</strong>
+						<p>Strict electrical isolation warnings accompany every test. We instruct users when a repair requires a licensed technician.</p>
+					</div>
+				</div>
+
+				<div class="trust-point">
+					<div class="trust-point-icon" aria-hidden="true">
+						<svg width="22" height="22" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+					</div>
+					<div class="trust-point-text">
+						<strong>Transparent Monetization</strong>
+						<p>Affiliate links for replacement parts are always clearly disclosed and never take precedence over safe DIY diagnosis.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main><!-- #main-content -->
+
+<footer class="site-footer" role="contentinfo">
+	<div class="footer-main">
+		<div class="site-container">
+			<div class="footer-grid">
+				<!-- Column 1: Brand & Safety Mission -->
+				<div class="footer-brand-col">
+					<div class="site-branding" style="margin-bottom:0.75rem;">
+						<span class="brand-icon" aria-hidden="true">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+						</span>
+						<span class="brand-title" style="font-size:1.1rem;">Fault and Fix</span>
+					</div>
+					<p>The independent technical reference for homeowner appliance fault codes, OEM diagnostic modes, and verified troubleshooting workflows.</p>
+					<div class="footer-emergency-note">
+						<strong>Safety Notice:</strong>
+						Always disconnect electrical power and shut off water supplies before servicing appliances. Consult a certified technician if unsure.					</div>
+				</div>
+
+				<!-- Column 2: Appliances -->
+				<div class="footer-col">
+					<h3 class="footer-col-title">Appliances</h3>
+					<ul class="footer-links">
+						<li><a href="/category/washing-machines/">Washing Machines</a></li>
+						<li><a href="/category/dryers/">Dryers</a></li>
+						<li><a href="/category/refrigerators/">Refrigerators</a></li>
+						<li><a href="/category/dishwashers/">Dishwashers</a></li>
+					</ul>
+				</div>
+
+				<!-- Column 3: Brands -->
+				<div class="footer-col">
+					<h3 class="footer-col-title">Manufacturers</h3>
+					<ul class="footer-links">
+						<li><a href="/brand/whirlpool/">Whirlpool Guides</a></li>
+						<li><a href="/brand/maytag/">Maytag Guides</a></li>
+						<li><a href="/brand/samsung/">Samsung Codes</a></li>
+						<li><a href="/brand/lg/">LG Electronics</a></li>
+						<li><a href="/brand/ge/">GE Appliances</a></li>
+					</ul>
+				</div>
+
+				<!-- Column 4: Editorial Standards & Disclaimers -->
+				<div class="footer-col">
+					<h3 class="footer-col-title">Standards &amp; Policies</h3>
+					<ul class="footer-links">
+						<li><a href="/about/">About Us</a></li>
+						<li><a href="/editorial-verification-policy/">Editorial &amp; Verification</a></li>
+						<li><a href="/corrections-policy/">Corrections Policy</a></li>
+						<li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+						<li><a href="/disclaimer/">Safety Disclaimer</a></li>
+						<li><a href="/privacy-policy/">Privacy Policy</a></li>
+						<li><a href="/contact/">Contact Technical Team</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="site-container">
+			<div class="footer-bottom-inner">
+				<div>
+					&copy; 2026 Fault and Fix. All technical trademarks and manufacturer brand names are property of their respective owners.				</div>
+				<div>
+					<a href="#main-content" style="text-decoration:none; color:var(--color-text-secondary); font-weight:600;">
+						Back to top &uarr;					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/appliance-diagnostic-clearinghouse/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="adc-theme-script-js" src="/wp-content/themes/appliance-diagnostic-clearinghouse/assets/js/main.min.js?ver=1.0.1" defer></script>
+</body>
+</html>
