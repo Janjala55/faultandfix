@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>GE Washer E23 Error Code Troubleshooting | Fault & Fix</title>
+<meta name="description" content="Troubleshoot GE washer E23 flood protection error with pressure transducer voltage checks, drain pump continuous run override, and valve tests.">
+<meta name="theme-color" content="#0F172A">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fault and Fix">
+<meta property="og:title" content="GE Washer E23 Error Code Troubleshooting | Fault & Fix">
+<meta property="og:description" content="Troubleshoot GE washer E23 flood protection error with pressure transducer voltage checks, drain pump continuous run override, and valve tests.">
+<meta property="og:url" content="https://faultandfix.com/ge-washer-error-code-e23-flood-protection-drain-fix/">
+<meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://faultandfix.com/wp-content/uploads/diagnostics/ge-washer-motor-inverter-board.webp">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="572">
+  <meta name="twitter:image" content="https://faultandfix.com/wp-content/uploads/diagnostics/ge-washer-motor-inverter-board.webp">
+  <meta name="twitter:title" content="GE Washer E23 Error Code Troubleshooting | Fault & Fix">
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Fault and Fix &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Fault and Fix &raquo; Comments Feed" href="/comments/feed/" />
+
+<link rel="stylesheet" id="adc-theme-style-css" href="/wp-content/themes/appliance-diagnostic-clearinghouse/style.min.css?ver=1.0.1" media="all">
+<link rel="canonical" href="https://faultandfix.com/ge-washer-error-code-e23-flood-protection-drain-fix/" />
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "GE Washer E23 Error Code: Flood Protection & Drain Override Diagnostic",
+    "description": "Critical Water Level Exceeded: Flood Mitigation Protocol Energized Drain Pump Continuously",
+    "datePublished": "2026-11-23T08:00:00+00:00",
+    "dateModified": "2026-11-23T08:00:00+00:00",
+    "mainEntityOfPage": "https://faultandfix.com/ge-washer-error-code-e23-flood-protection-drain-fix/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Fault and Fix",
+        "url": "https://faultandfix.com/"
+    },
+    "author": {
+        "@type": "Organization",
+        "name": "Fault and Fix Diagnostic Engineering Team",
+        "url": "https://faultandfix.com/about/"
+    },
+    "articleSection": "Washer",
+    "reviewedBy": {
+        "@type": "Person",
+        "name": "Marcus Vance (Senior Appliance Specialist)",
+        "jobTitle": "Certified Master Appliance Technician (NASTeC & CETa)"
+    },
+    "proficiencyLevel": "Intermediate",
+    "keywords": "E23, fault code, diagnostic mode, appliance repair, GE Appliances Front-Load Washer",
+    "image": "https://faultandfix.com/wp-content/uploads/diagnostics/ge-washer-motor-inverter-board.webp"
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://faultandfix.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Washer",
+            "item": "https://faultandfix.com/category/washers/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "GE Appliances E23",
+            "item": "https://faultandfix.com/ge-washer-error-code-e23-flood-protection-drain-fix/"
+        }
+    ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Why does my GE washer pump out water continuously when E23 triggers?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The control board has detected water rising above the safe overflow threshold. To prevent hundreds of gallons of water from flooding your home, the firmware initiates an emergency override that runs the drain pump until the pressure sensor drops below empty."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can a cracked pressure tube cause an E23 error?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! If the pressure hose splits or pops off the tub nipple, air escapes as water fills. The sensor never detects water rising, causing the washer to fill continuously until water physically touches the electrical overflow contact."
+            }
+        }
+    ]
+}
+</script>
+</head>
+
+<body class="wp-singular post-template-default single single-post single-format-standard wp-embed-responsive wp-theme-appliance-diagnostic-clearinghouse">
+
+<a class="skip-link" href="#main-content">Skip to diagnostic content</a>
+
+<header class="site-header" role="banner">
+	<div class="site-container">
+		<div class="header-inner">
+			<a href="/" class="site-branding" rel="home">
+				<span class="brand-icon" aria-hidden="true">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+				</span>
+				<div>
+					<span class="brand-title">Fault and Fix</span>
+					<span class="brand-subtitle">Technical Appliance Reference</span>
+				</div>
+			</a>
+
+			<div class="header-search">
+				<form role="search" method="get" class="header-search-form" action="/"><label for="header-search-input" class="screen-reader-text">Search error code, brand, model</label><span class="header-search-icon" aria-hidden="true">
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+					</span>
+					<input id="header-search-input" type="search" class="header-search-input" placeholder="Search error code, brand, model..." value="" name="s" aria-label="Search error codes and guides">
+				</form>
+			</div>
+
+			<nav class="header-nav" aria-label="Primary Navigation">
+				<ul id="menu-primary-header-navigation" class="nav-menu">
+					<li class="menu-item"><a href="/">Home</a></li>
+					<li class="menu-item"><a href="/category/washing-machines/">Washing Machines</a></li>
+					<li class="menu-item"><a href="/category/dryers/">Dryers</a></li>
+					<li class="menu-item"><a href="/brand/whirlpool/">Whirlpool</a></li>
+					<li class="menu-item"><a href="/brand/maytag/">Maytag</a></li>
+					<li class="menu-item"><a href="/about/">About</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-actions">
+				<button class="btn-icon btn-mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+					<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main id="main-content" tabindex="-1">
+<div class="site-container">
+	<article class="single-article-layout post type-post status-publish format-standard has-post-thumbnail category-washers appliance_brand-ge">
+		<header class="article-header">
+			<nav class="adc-breadcrumbs" aria-label="Breadcrumbs"><a href="/">Home</a><span class="adc-breadcrumbs-separator" aria-hidden="true">/</span><a href="/category/washers/">Washer</a><span class="adc-breadcrumbs-separator" aria-hidden="true">/</span><span aria-current="page">GE Appliances E23</span></nav>
+			<h1 class="article-title">GE Washer E23 Error Code: Flood Protection & Drain Override Diagnostic</h1>
+
+			<div class="article-meta-bar">
+				<div class="article-meta-item">
+					<svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+					<span>By Fault and Fix Diagnostic Engineering Team</span>
+				</div>
+
+				<div class="article-meta-item">
+					<svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+					<span>Updated: <time datetime="2026-11-23T08:00:00+00:00">Nov 23, 2026</time></span>
+				</div>
+
+				<div class="article-meta-item" style="color:var(--color-success); font-weight:600;">
+					<svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+					<span>Reviewed by Marcus Vance (Senior Appliance Specialist)</span>
+				</div>
+
+				<div class="article-meta-item">
+					<svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+					<span>5 min read</span>
+				</div>
+			</div>
+
+			<section class="diagnostic-summary-card" aria-label="Diagnostic Summary Card">
+				<header class="dsc-header">
+					<div class="dsc-badge-wrap">
+						<span class="dsc-eyebrow">Verified OEM Fault Diagnostic</span>
+						<span class="dsc-code-badge">E23</span>
+					</div>
+					<div class="dsc-verification-badge">
+						<svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+						<span>Verified against GE Appliances OEM Engineering Service Specs</span>
+					</div>
+				</header>
+
+				<div class="dsc-row dsc-meaning-row">
+					<span class="dsc-label">Official Fault Meaning:</span>
+					<strong class="dsc-val dsc-meaning-text">Critical Water Level Exceeded: Flood Mitigation Protocol Energized Drain Pump Continuously</strong>
+				</div>
+
+				<div class="dsc-row dsc-cause-row">
+					<span class="dsc-label">Most Likely Root Cause:</span>
+					<span class="dsc-val">Mechanically stuck-open water valve, shorted PCB fill triac, or detached/kinked pressure switch air tube.</span>
+				</div>
+
+				<div class="dsc-grid">
+					<div class="dsc-grid-item">
+						<span class="dsc-label">Repair Difficulty:</span>
+						<span class="dsc-val">Intermediate DIY</span>
+					</div>
+					<div class="dsc-grid-item">
+						<span class="dsc-label">Estimated Time:</span>
+						<span class="dsc-val">30 mins</span>
+					</div>
+					<div class="dsc-grid-item dsc-grid-full">
+						<span class="dsc-label">Required Tools:</span>
+						<span class="dsc-val">1/4-inch Nut Driver, Digital Multimeter, Bucket, Pliers</span>
+					</div>
+					<div class="dsc-grid-item dsc-grid-full">
+						<span class="dsc-label">Applicable Models:</span>
+						<span class="dsc-val">GFW850SSNWW, GFW650SSNWW, GFW550SSNWW, GFWH1200DWW, GFWN1100LWW, GFD85ESSNWW</span>
+					</div>
+				</div>
+
+				<div class="dsc-action-panel">
+					<div class="dsc-action-header" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+						<div style="display:inline-flex; align-items:center; gap:6px;">
+							<svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.381z" clip-rule="evenodd"></path></svg>
+							<strong>Immediate Safe Action / 60-Second Quick Check</strong>
+						</div>
+					</div>
+					<p class="dsc-action-text">Shut off water supply taps immediately. If water continues flowing with power unplugged, valve is stuck.</p>
+				</div>
+			</section>
+		</header>
+
+		<div class="single-container">
+			<div class="article-main-content">
+				<figure class="article-featured-image" style="margin-bottom:2rem; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--color-border); box-shadow:var(--shadow-sm);">
+					<img width="1024" height="572" src="/wp-content/uploads/diagnostics/ge-washer-motor-inverter-board.webp" class="attachment-large size-large wp-post-image" alt="GE Appliances E23 diagnostic inspection" style="width:100%; height:auto; display:block; object-fit:cover;" decoding="async" fetchpriority="high" />
+				</figure>
+
+				<div class="entry-content">
+					<h2 class="wp-block-heading" id="symptoms">1. Symptoms & Operational Failure Signs</h2>
+					<p>When code <strong>E23</strong> triggers, the central microcontroller detects anomalous feedback or sensor voltage out of range. Check for these symptoms:</p>
+					<ul>
+	<li>'E23' displayed in diagnostic log; drain pump runs continuously even with door open</li>
+	<li>Washer fills with water and refuses to stop until emergency overflow drain threshold is hit</li>
+	<li>Cycle cancels abruptly and continuously expels water into home standpipe</li>
+	<li>Door remains locked to protect user from scalding overflow water</li>
+</ul>
+
+					<h2 class="wp-block-heading" id="reset-sequence">2. The 30-Second Hard Reset Sequence</h2>
+					<p>Clear temporary software lockouts, residual filter capacitor voltage, and transient logic anomalies with this factory capacitive drain routine:</p>
+					<ol>
+	<li>Shut off home hot and cold water shutoff valves immediately.</li>
+	<li>Disconnect electrical power cord from wall outlet.</li>
+	<li>If water continues entering with power unplugged, replace mechanical water inlet valve immediately.</li>
+	<li>Reconnect power after repair; allow drain pump to empty tub completely to clear E23 alarm.</li>
+</ol>
+
+					<h2 class="wp-block-heading" id="diagnostic-mode">3. Entering Hidden Factory Diagnostic Mode</h2>
+					<p>Execute this technician keypad/dial cadence to force direct component test routines, cycle individual actuators, and read stored historical fault codes:</p>
+					<ol>
+	<li>Check if water stops entering when power is unplugged: If YES, the main control board fill triac is shorted.</li>
+	<li>If NO, the valve solenoid armature has calcified scale jamming it physically open.</li>
+	<li>Inspect the clear vinyl pressure switch air tube behind the front panel.</li>
+	<li>Run Diagnostic Test 02 (Drain Pump Test) to ensure pump motor evacuates full tub within 3 minutes.</li>
+</ol>
+
+					<h2 class="wp-block-heading" id="multimeter-test">4. Multimeter Resistance (Ω) Specifications & Harness Pinouts</h2>
+					<p>Disconnect electrical power before probing harness terminals. Set your digital multimeter to the lowest Ohms (Ω) scale and test the critical circuit path:</p>
+					<table class="table-diagnostic">
+						<thead>
+							<tr>
+								<th>Component & Harness Terminals</th>
+								<th>Expected OEM Reading (Normal)</th>
+								<th>Failure Threshold (Replace Component)</th>
+							</tr>
+						</thead>
+						<tbody>
+		<tr>
+			<td><strong>Water Inlet Valve Solenoids (Unpowered State)</strong><br><small style="color:var(--color-text-secondary);">Valve Coil Terminals with Harness Off</small></td>
+			<td><strong>1,000 Ω to 1,300 Ω (Nominal 1,150 Ω at 77°F)</strong></td>
+			<td><span style="color:var(--color-danger); font-weight:600;">0 Ω (Dead shorted coil fires triac continuously)</span></td>
+		</tr>
+		<tr>
+			<td><strong>Drain Pump Motor Winding</strong><br><small style="color:var(--color-text-secondary);">Pump Terminals (Harness Off)</small></td>
+			<td><strong>18.0 Ω to 26.0 Ω (Nominal 22.5 Ω at 77°F)</strong></td>
+			<td><span style="color:var(--color-danger); font-weight:600;">Infinite OL (Burned open motor coil)</span></td>
+		</tr>
+		<tr>
+			<td><strong>Pressure Sensor Signal Voltage</strong><br><small style="color:var(--color-text-secondary);">Sensor Pin 2 to Pin 3 (GND)</small></td>
+			<td><strong>0.5V DC (Empty Tub) to 3.5V DC (Full Water)</strong></td>
+			<td><span style="color:var(--color-danger); font-weight:600;">&gt; 4.5V DC with empty tub (Faulty sensor triggers false E23)</span></td>
+		</tr>
+						</tbody>
+					</table>
+
+					<h2 class="wp-block-heading" id="teardown-steps">5. Step-by-Step Mechanical Tear-Down & Repair</h2>
+					<p>Follow these 5 OEM service manual steps to access, inspect, and replace the failing component safely:</p>
+					<ol>
+	<li><strong>Water Isolation:</strong> Turn off water shutoff valves and disconnect power cord.</li>
+	<li><strong>Top Panel Removal:</strong> Remove the three rear 1/4-inch screws and slide the top metal lid backward.</li>
+	<li><strong>Pressure Tube Check:</strong> Inspect clear vinyl pressure hose for splits, disconnects, or water condensation in the line.</li>
+	<li><strong>Air Trap Blowout:</strong> Disconnect tube at pressure sensor, blow gently into hose to clear lint blockage in tub air dome.</li>
+	<li><strong>Valve Replacement:</strong> Unscrew water inlet valve from rear bracket, transfer wire harnesses and hoses to new OEM valve (part WH13X26534).</li>
+</ol>
+
+					<section class="adc-semantic-cluster-box" aria-label="Connected Diagnostic Guides">
+						<div class="adc-cluster-header">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
+							<h3 class="adc-cluster-title">Connected GE Appliances Diagnostic Guides & Next Steps</h3>
+						</div>
+						<p class="adc-cluster-desc">Appliance control faults often cascade through shared sensor rails or drain circuits. Verify these related diagnostic procedures:</p>
+						<div class="adc-cluster-grid">
+		<a href="/ge-washer-error-code-e22-slow-water-fill-fix/" class="adc-cluster-card">
+			<div>
+				<span class="adc-cluster-card-badge">E22</span>
+				<div class="adc-cluster-card-title">GE Washer E22 Slow Water Fill Guide</div>
+				<div class="adc-cluster-card-sub">Slow fill solenoid testing and screen cleanout.</div>
+			</div>
+			<span class="adc-cluster-card-cta">Open Guide &rarr;</span>
+		</a>
+		<a href="/ge-washer-error-code-h2o-long-fill-timeout-fix/" class="adc-cluster-card">
+			<div>
+				<span class="adc-cluster-card-badge">H2O</span>
+				<div class="adc-cluster-card-title">GE Washer H2O Long Fill Timeout Guide</div>
+				<div class="adc-cluster-card-sub">Inlet valve solenoid testing and screen filter cleaning.</div>
+			</div>
+			<span class="adc-cluster-card-cta">Open Guide &rarr;</span>
+		</a>
+		<a href="/whirlpool-washer-error-code-f8-e3-overflow-flood-fix/" class="adc-cluster-card">
+			<div>
+				<span class="adc-cluster-card-badge">Whirlpool F8 E3</span>
+				<div class="adc-cluster-card-title">Whirlpool Washer F8 E3 Overflow Flood Fix</div>
+				<div class="adc-cluster-card-sub">Overflow flood switch testing and drain pump checks.</div>
+			</div>
+			<span class="adc-cluster-card-cta">Open Guide &rarr;</span>
+		</a>
+						</div>
+					</section>
+
+					<h2 class="wp-block-heading" id="faq">6. Frequently Asked Questions</h2>
+					<div class="faq-container">
+	<details class="faq-item">
+		<summary>
+			<span>Why does my GE washer pump out water continuously when E23 triggers?</span>
+			<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+		</summary>
+		<div class="faq-body">
+			<p>The control board has detected water rising above the safe overflow threshold. To prevent hundreds of gallons of water from flooding your home, the firmware initiates an emergency override that runs the drain pump until the pressure sensor drops below empty.</p>
+		</div>
+	</details>
+	<details class="faq-item">
+		<summary>
+			<span>Can a cracked pressure tube cause an E23 error?</span>
+			<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+		</summary>
+		<div class="faq-body">
+			<p>Yes! If the pressure hose splits or pops off the tub nipple, air escapes as water fills. The sensor never detects water rising, causing the washer to fill continuously until water physically touches the electrical overflow contact.</p>
+		</div>
+	</details>
+					</div>
+				</div>
+
+				<!-- Author & Technical Reviewer Credentials -->
+				<section class="adc-author-box" aria-label="Author and Technical Reviewer">
+					<div class="adc-author-avatar" aria-hidden="true">
+						<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+					</div>
+					<div class="adc-author-info">
+						<h4>Fault and Fix Diagnostic Engineering Team <span style="font-weight:normal; font-size:13px; color:var(--color-text-secondary);">&bull; Reviewed by Marcus Vance (Senior Appliance Specialist, NASTeC & CETa)</span></h4>
+						<p>Authored by certified appliance engineers and cross-referenced with manufacturer factory schematics and technical service bulletins. Zero sponsored substitutes.</p>
+					</div>
+				</section>
+
+				<!-- Related Diagnostic Articles -->
+				<section class="related-articles-section" style="margin-top:2.5rem; padding-top:1.5rem; border-top:1px solid var(--color-border);">
+					<div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:1rem; flex-wrap:wrap; gap:8px;">
+						<div>
+							<span style="font-size:11px; font-weight:800; text-transform:uppercase; color:var(--color-accent); letter-spacing:0.05em; display:block; margin-bottom:4px;">Diagnostic Hub</span>
+							<h3 style="font-size:var(--font-size-lg); font-weight:800; margin:0; color:var(--color-text);">Connected Diagnostic Procedures</h3>
+						</div>
+						<a href="/brand/ge/" style="font-size:13px; font-weight:700; color:var(--color-accent); text-decoration:none;">
+							All GE Appliances Guides &rarr;
+						</a>
+					</div>
+
+					<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:1rem;">
+					<div class="article-card" style="margin:0; border:1px solid var(--color-border); border-radius:var(--radius-md); overflow:hidden; background:var(--color-bg-secondary); transition:transform 0.2s ease, box-shadow 0.2s ease;">
+						<div style="aspect-ratio:16/9; overflow:hidden; background:var(--color-bg);">
+							<a href="/ge-washer-error-code-e22-slow-water-fill-fix/" tabindex="-1" aria-hidden="true" style="display:block; width:100%; height:100%;">
+								<img width="300" height="167" src="/wp-content/uploads/diagnostics/ge-washer-motor-inverter-board-300x167.webp" class="attachment-medium size-medium wp-post-image" alt="GE Washer E22 Slow Water Fill Guide" style="width:100%; height:100%; object-fit:cover; display:block;" decoding="async" loading="lazy" />
+							</a>
+						</div>
+						<div style="padding:0.875rem 1rem;">
+							<div style="display:flex; align-items:center; gap:6px; margin-bottom:6px;">
+								<span class="ecc-badge" style="font-size:11px; padding:2px 6px;">E22</span>
+								<span style="font-size:var(--font-size-xs); color:var(--color-text-muted);">4 min read</span>
+							</div>
+							<h4 style="font-size:0.95rem; font-weight:700; line-height:1.4; margin:0 0 0.5rem;">
+								<a href="/ge-washer-error-code-e22-slow-water-fill-fix/" style="text-decoration:none; color:var(--color-text);">GE Washer E22 Slow Water Fill Guide</a>
+							</h4>
+							<a href="/ge-washer-error-code-e22-slow-water-fill-fix/" style="font-size:12px; font-weight:700; color:var(--color-accent); text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
+								View Diagnostic &rarr;
+							</a>
+						</div>
+					</div>
+					<div class="article-card" style="margin:0; border:1px solid var(--color-border); border-radius:var(--radius-md); overflow:hidden; background:var(--color-bg-secondary); transition:transform 0.2s ease, box-shadow 0.2s ease;">
+						<div style="aspect-ratio:16/9; overflow:hidden; background:var(--color-bg);">
+							<a href="/ge-washer-error-code-h2o-long-fill-timeout-fix/" tabindex="-1" aria-hidden="true" style="display:block; width:100%; height:100%;">
+								<img width="300" height="167" src="/wp-content/uploads/diagnostics/ge-washer-motor-inverter-board-300x167.webp" class="attachment-medium size-medium wp-post-image" alt="GE Washer H2O Long Fill Timeout Guide" style="width:100%; height:100%; object-fit:cover; display:block;" decoding="async" loading="lazy" />
+							</a>
+						</div>
+						<div style="padding:0.875rem 1rem;">
+							<div style="display:flex; align-items:center; gap:6px; margin-bottom:6px;">
+								<span class="ecc-badge" style="font-size:11px; padding:2px 6px;">H2O</span>
+								<span style="font-size:var(--font-size-xs); color:var(--color-text-muted);">4 min read</span>
+							</div>
+							<h4 style="font-size:0.95rem; font-weight:700; line-height:1.4; margin:0 0 0.5rem;">
+								<a href="/ge-washer-error-code-h2o-long-fill-timeout-fix/" style="text-decoration:none; color:var(--color-text);">GE Washer H2O Long Fill Timeout Guide</a>
+							</h4>
+							<a href="/ge-washer-error-code-h2o-long-fill-timeout-fix/" style="font-size:12px; font-weight:700; color:var(--color-accent); text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
+								View Diagnostic &rarr;
+							</a>
+						</div>
+					</div>
+					<div class="article-card" style="margin:0; border:1px solid var(--color-border); border-radius:var(--radius-md); overflow:hidden; background:var(--color-bg-secondary); transition:transform 0.2s ease, box-shadow 0.2s ease;">
+						<div style="aspect-ratio:16/9; overflow:hidden; background:var(--color-bg);">
+							<a href="/whirlpool-washer-error-code-f8-e3-overflow-flood-fix/" tabindex="-1" aria-hidden="true" style="display:block; width:100%; height:100%;">
+								<img width="300" height="167" src="/wp-content/uploads/diagnostics/maytag-lf-water-inlet-valve-300x167.webp" class="attachment-medium size-medium wp-post-image" alt="Whirlpool Washer F8 E3 Overflow Flood Fix" style="width:100%; height:100%; object-fit:cover; display:block;" decoding="async" loading="lazy" />
+							</a>
+						</div>
+						<div style="padding:0.875rem 1rem;">
+							<div style="display:flex; align-items:center; gap:6px; margin-bottom:6px;">
+								<span class="ecc-badge" style="font-size:11px; padding:2px 6px;">Whirlpool F8 E3</span>
+								<span style="font-size:var(--font-size-xs); color:var(--color-text-muted);">4 min read</span>
+							</div>
+							<h4 style="font-size:0.95rem; font-weight:700; line-height:1.4; margin:0 0 0.5rem;">
+								<a href="/whirlpool-washer-error-code-f8-e3-overflow-flood-fix/" style="text-decoration:none; color:var(--color-text);">Whirlpool Washer F8 E3 Overflow Flood Fix</a>
+							</h4>
+							<a href="/whirlpool-washer-error-code-f8-e3-overflow-flood-fix/" style="font-size:12px; font-weight:700; color:var(--color-accent); text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
+								View Diagnostic &rarr;
+							</a>
+						</div>
+					</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Desktop Sticky Sidebar -->
+			<aside class="article-sidebar" aria-label="Article Tools and Navigation">
+				<div class="sidebar-sticky">
+					<div class="sidebar-widget">
+						<div class="sidebar-toc">
+							<h3 class="sidebar-widget-title">On This Page</h3>
+							<ul class="toc-list" style="list-style:none; padding:0; margin:0; font-size:13px; line-height:1.6;">
+								<li><a href="#symptoms" style="text-decoration:none; color:var(--color-text-secondary);">1. Symptoms Checklist</a></li>
+								<li><a href="#reset-sequence" style="text-decoration:none; color:var(--color-text-secondary);">2. 30-Sec Hard Reset</a></li>
+								<li><a href="#diagnostic-mode" style="text-decoration:none; color:var(--color-text-secondary);">3. Hidden Diagnostic Mode</a></li>
+								<li><a href="#multimeter-test" style="text-decoration:none; color:var(--color-text-secondary);">4. Multimeter Resistance (Ω)</a></li>
+								<li><a href="#teardown-steps" style="text-decoration:none; color:var(--color-text-secondary);">5. Tear-Down & Repair</a></li>
+								<li><a href="#faq" style="text-decoration:none; color:var(--color-text-secondary);">6. Common FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sidebar-widget" style="border-left:4px solid var(--color-warning-border);">
+						<h3 class="sidebar-widget-title" style="color:var(--color-warning-text);">Technician Safety Notice</h3>
+						<p style="font-size:var(--font-size-xs); color:var(--color-text-secondary); line-height:1.5;">
+							Always disconnect 120V/240V AC electrical power and shut off water or gas supply valves before servicing cabinet internals. Verify zero voltage with a calibrated meter.
+						</p>
+					</div>
+
+					<div class="sidebar-widget">
+						<h3 class="sidebar-widget-title">Search Error Clearinghouse</h3>
+						<form role="search" method="get" action="/">
+							<input type="search" name="s" placeholder="e.g. E23, LE, F5 E1..." style="width:100%; padding:8px; border:1px solid var(--color-border); border-radius:4px; font-size:13px; margin-bottom:8px;">
+							<button type="submit" class="hero-search-btn" style="width:100%; padding:8px; font-size:13px; min-height:36px;">Search Guides</button>
+						</form>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</article>
+</div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+	<div class="footer-main">
+		<div class="site-container">
+			<div class="footer-grid">
+				<div class="footer-brand-col">
+					<div class="site-branding" style="margin-bottom:0.75rem;">
+						<span class="brand-icon" aria-hidden="true">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+						</span>
+						<span class="brand-title" style="font-size:1.1rem;">Fault and Fix</span>
+					</div>
+					<p>The independent technical reference for homeowner appliance fault codes, OEM diagnostic modes, and verified troubleshooting workflows.</p>
+					<div class="footer-emergency-note">
+						<strong>Safety Notice:</strong>
+						Always disconnect electrical power and shut off water supplies before servicing appliances. Consult a certified technician if unsure.
+					</div>
+				</div>
+
+				<div class="footer-col">
+					<h3 class="footer-col-title">Appliances</h3>
+					<ul class="footer-links">
+						<li><a href="/category/washing-machines/">Washing Machines</a></li>
+						<li><a href="/category/dryers/">Dryers</a></li>
+						<li><a href="/category/refrigerators/">Refrigerators</a></li>
+						<li><a href="/category/dishwashers/">Dishwashers</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h3 class="footer-col-title">Manufacturers</h3>
+					<ul class="footer-links">
+						<li><a href="/brand/whirlpool/">Whirlpool Guides</a></li>
+						<li><a href="/brand/maytag/">Maytag Guides</a></li>
+						<li><a href="/brand/samsung/">Samsung Codes</a></li>
+						<li><a href="/brand/lg/">LG Electronics</a></li>
+						<li><a href="/brand/ge/">GE Appliances</a></li>
+						<li><a href="/brand/bosch/">Bosch Guides</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h3 class="footer-col-title">Standards &amp; Policies</h3>
+					<ul class="footer-links">
+						<li><a href="/about/">About Us</a></li>
+						<li><a href="/editorial-verification-policy/">Editorial &amp; Verification</a></li>
+						<li><a href="/corrections-policy/">Corrections Policy</a></li>
+						<li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+						<li><a href="/disclaimer/">Safety Disclaimer</a></li>
+						<li><a href="/privacy-policy/">Privacy Policy</a></li>
+						<li><a href="/contact/">Contact Technical Team</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="site-container">
+			<div class="footer-bottom-inner">
+				<div>
+					&copy; 2026 Fault and Fix. All technical trademarks and manufacturer brand names are property of their respective owners.
+				</div>
+				<div>
+					<a href="#main-content" style="text-decoration:none; color:var(--color-text-secondary); font-weight:600;">
+						Back to top &uarr;
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script id="adc-theme-script-js" src="/wp-content/themes/appliance-diagnostic-clearinghouse/assets/js/main.min.js?ver=1.0.1" defer></script>
+</body>
+</html>

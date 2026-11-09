@@ -1,183 +1,723 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://faultandfix.com/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/about/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/affiliate-disclosure/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/bosch-dishwasher-error-code-e15-meaning-reset-fix/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/bosch-dishwasher-error-code-e24-e25-drain-impeller-fix/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/brand/bosch/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/brand/ge/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/brand/lg/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/brand/maytag/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/brand/samsung/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/brand/whirlpool/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/category/dishwashers/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/category/dryers/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/category/refrigerators/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/category/washing-machines/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/category/washing-machines/page/2/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/contact/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/corrections-policy/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/disclaimer/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/editorial-verification-policy/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/electric-dryer-wont-heat-thermal-fuse-heating-element-test/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/ge-dishwasher-blinking-start-light-reset-door-latch/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/ge-washer-reset-procedure-motor-inverter-flash-codes/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/lg-washer-error-code-le-hall-sensor-reset/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/lg-washer-error-code-oe-drain-pump-cleanout/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/maytag-commercial-technology-washer-reset-calibration/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/maytag-top-load-washer-lf-error-code-troubleshooting/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/privacy-policy/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/samsung-refrigerator-error-code-22e-fan-motor-fix/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/samsung-washer-error-code-4c-4e-water-supply-fix/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/samsung-washer-error-code-5c-5e-drain-fix/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/sources-documentation-policy/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/whirlpool-cabrio-washer-f01-e02-motor-control-fault/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/whirlpool-cabrio-washer-f02-e01-error-code/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/whirlpool-cabrio-washer-f5-e1-lid-lock-error/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://faultandfix.com/whirlpool-cabrio-washing-machine-how-to-enter-diagnostic-mode/</loc>
-    <lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-washer-error-code-ub-ue-unbalanced-load-fix/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-washer-error-code-dc-de-door-lock-fix/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-washer-error-code-3c-motor-drive-inverter-fix/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-washer-error-code-1c-1e-pressure-switch-fix/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-washer-error-code-9c1-9e1-voltage-fault-fix/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-washer-error-code-nf-long-fill-cleanout-fix/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-dryer-error-code-te-te5-thermistor-fix/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-dryer-error-code-de-door-switch-latch-fix/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-dryer-error-code-he-heater-relay-tripped-fix/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-refrigerator-error-code-1e-5e-defrost-sensor-fix/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-refrigerator-error-code-4e-4c-water-valve-fix/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-refrigerator-error-code-8e-8c-ice-maker-sensor-fix/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-refrigerator-error-code-25e-defrost-heater-fix/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-refrigerator-error-code-26e-water-valve-solenoid-fix/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-dishwasher-error-code-lc-le-leak-sensor-fix/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-dishwasher-error-code-3c-wash-motor-impeller-fix/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-dishwasher-error-code-4c-4e-water-supply-fix/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-dishwasher-error-code-9e-low-water-sensor-fix/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-range-error-code-se-5e-keypad-short-fix/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-range-error-code-c-f0-pcb-communication-fix/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/samsung-range-error-code-c-20-oven-rtd-sensor-fix/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-washer-error-code-de-door-latch-switch-fix/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-washer-error-code-ie-water-inlet-cleanout-fix/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-washer-error-code-ue-unbalanced-tub-damper-fix/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-washer-error-code-cl-child-lock-disable-sequence/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-washer-error-code-te-thermistor-heating-fix/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-washer-error-code-fe-overflow-switch-fix/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-washer-error-code-pe-pressure-sensor-frequency-fix/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-washer-error-code-pf-power-failure-reset-fix/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-dryer-error-code-d80-d90-flowsense-vent-fix/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-dryer-no-heat-thermal-fuse-high-limit-fix/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-dryer-error-code-te1-te2-thermistor-fix/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-gas-dryer-error-code-gas-igniter-coil-fix/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-refrigerator-error-code-er-ff-freezer-fan-motor-fix/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-refrigerator-error-code-er-dh-defrost-heater-fix/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-refrigerator-error-code-er-fs-freezer-sensor-fix/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-refrigerator-error-code-er-rs-fresh-food-sensor-fix/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-refrigerator-error-code-er-is-ice-maker-fix/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-refrigerator-error-code-er-cf-condenser-fan-fix/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-dishwasher-error-code-ie-water-inlet-fix/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-dishwasher-error-code-ae-e1-leak-float-fix/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/lg-dishwasher-error-code-be-suds-rinse-fix/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-washer-error-code-f5-e2-lid-unlock-fix/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-washer-error-code-f7-e1-speed-sensor-fix/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-washer-error-code-f8-e1-fill-timeout-fix/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-washer-error-code-f0-e5-off-balance-load-fix/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-washer-error-code-f3-e1-pressure-sensor-fix/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-washer-error-code-f7-e5-shifter-actuator-fix/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-washer-error-code-f8-e3-overflow-flood-fix/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-dryer-error-code-e1-f3-exhaust-thermistor-fix/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-dryer-error-code-af-airflow-restricted-fix/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-dryer-error-code-f3-e2-moisture-sensor-fix/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/maytag-washer-error-code-e01-f09-long-drain-fix/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/maytag-washer-error-code-e01-f03-pressure-sensor-fix/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/maytag-washer-error-code-e02-f05-drive-motor-fix/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-refrigerator-code-po-power-outage-reset/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-refrigerator-error-code-e5-thermistor-fix/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-refrigerator-error-code-e2-ice-maker-fix/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-dishwasher-error-code-f6-e4-float-switch-fix/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-dishwasher-error-code-f8-e4-float-switch-fix/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-dishwasher-error-code-f7-e1-heating-element-fix/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-oven-error-code-f3-e0-temperature-sensor-fix/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/whirlpool-oven-error-code-f1-e0-control-board-fix/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/ge-washer-error-code-h2o-long-fill-timeout-fix/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/ge-washer-code-den-demo-mode-deactivation-guide/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/ge-washer-error-code-e22-slow-water-fill-fix/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/ge-washer-error-code-e23-flood-protection-drain-fix/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/ge-washer-error-code-e38-e39-dispenser-valve-fix/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/ge-dryer-error-code-005-inlet-thermistor-fix/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/ge-dryer-error-code-003-outlet-thermistor-fix/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/ge-refrigerator-code-88-89-power-surge-reset/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/ge-refrigerator-code-cc-freezer-temperature-alarm/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/ge-refrigerator-error-code-de-defrost-system-fix/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/bosch-dishwasher-error-code-e09-heating-element-fix/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/bosch-dishwasher-error-code-e22-filter-cleanout-fix/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/bosch-dishwasher-error-code-e28-turbidity-sensor-fix/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/bosch-dishwasher-error-code-e01-e02-power-module-fix/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/frigidaire-washer-error-code-e11-fill-timeout-fix/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/frigidaire-washer-error-code-e21-drain-pump-fix/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/frigidaire-washer-error-code-e41-door-switch-fix/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/frigidaire-dryer-error-code-e5b-heating-element-fix/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/frigidaire-refrigerator-error-code-sy-cf-comm-fix/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/frigidaire-refrigerator-error-code-4-thermistor-fix/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://faultandfix.com/frigidaire-dishwasher-error-code-i20-i30-pressure-fix/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>
