@@ -5,4 +5,7 @@ Disallow: /*/feed/
 Disallow: /feed/
 Disallow: /comments/feed/
 
+Disallow: /*?s=
+Disallow: /wp-json/
+Disallow: /wp-login.php
 Sitemap: https://faultandfix.com/sitemap.xml
