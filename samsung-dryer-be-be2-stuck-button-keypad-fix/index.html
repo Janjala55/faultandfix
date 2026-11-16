@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Samsung Dryer bE / bE2 Error: Stuck Button Fix | Fault & Fix</title>
+<meta name="description" content="Fix Samsung dryer error codes bE and bE2. Unstick continuous touch panel keys, test capacitive ribbon cable connections, and reset the sub-PCB interface.">
+<meta name="theme-color" content="#0F172A">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fault and Fix">
+<meta property="og:title" content="Samsung Dryer bE / bE2 Error: Stuck Button Fix | Fault & Fix">
+<meta property="og:description" content="Fix Samsung dryer error codes bE and bE2. Unstick continuous touch panel keys, test capacitive ribbon cable connections, and reset the sub-PCB interface.">
+<meta property="og:url" content="https://faultandfix.com/samsung-dryer-be-be2-stuck-button-keypad-fix/">
+<meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://faultandfix.com/wp-content/uploads/diagnostics/dryer-heating-element-thermal-fuse-test-1024x572.webp">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="572">
+  <meta name="twitter:image" content="https://faultandfix.com/wp-content/uploads/diagnostics/dryer-heating-element-thermal-fuse-test-1024x572.webp">
+  <meta name="twitter:title" content="Samsung Dryer bE / bE2 Error: Stuck Button Fix | Fault & Fix">
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Fault and Fix &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Fault and Fix &raquo; Comments Feed" href="/comments/feed/" />
+
+<link rel="stylesheet" id="adc-theme-style-css" href="/wp-content/themes/appliance-diagnostic-clearinghouse/style.min.css?ver=1.0.1" media="all">
+<link rel="canonical" href="https://faultandfix.com/samsung-dryer-be-be2-stuck-button-keypad-fix/" />
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Samsung Dryer bE / bE2 Error Code: Stuck Button & Touch Panel Repair",
+    "description": "Fix Samsung dryer error codes bE and bE2. Unstick continuous touch panel keys, test capacitive ribbon cable connections, and reset the sub-PCB interface.",
+    "datePublished": "2026-11-18T08:00:00+00:00",
+    "dateModified": "2026-11-18T08:00:00+00:00",
+    "mainEntityOfPage": "https://faultandfix.com/samsung-dryer-be-be2-stuck-button-keypad-fix/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Fault and Fix",
+        "url": "https://faultandfix.com/"
+    },
+    "author": {
+        "@type": "Organization",
+        "name": "Fault and Fix Diagnostic Engineering Team",
+        "url": "https://faultandfix.com/about/"
+    },
+    "articleSection": "Dryers",
+    "reviewedBy": {
+        "@type": "Person",
+        "name": "Marcus Vance (Senior Appliance Specialist)",
+        "jobTitle": "Certified Master Appliance Technician (NASTeC & CETa)"
+    },
+    "proficiencyLevel": "Beginner",
+    "keywords": "bE / bE2 / 6E, fault code, diagnostic mode, appliance repair, Samsung Dryers",
+    "image": "https://faultandfix.com/wp-content/uploads/diagnostics/dryer-heating-element-thermal-fuse-test-1024x572.webp"
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://faultandfix.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Dryers",
+            "item": "https://faultandfix.com/category/dryers/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Samsung bE / bE2 / 6E",
+            "item": "https://faultandfix.com/samsung-dryer-be-be2-stuck-button-keypad-fix/"
+        }
+    ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Can cleaning spray cause code bE2 on Samsung dryers?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Spraying liquid glass cleaner directly onto the front control panel allows liquid to seep behind the plastic bezel, bridging the sensitive capacitive touch traces and triggering code bE2 within minutes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is the difference between bE and bE2?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Error bE indicates a general stuck button on the main keypad matrix, while bE2 specifically indicates an internal communication or short-circuit error within the user interface sub-microprocessor."
+            }
+        }
+    ]
+}
+</script>
+</head>
+
+<body class="wp-singular post-template-default single single-post single-format-standard wp-embed-responsive wp-theme-appliance-diagnostic-clearinghouse">
+
+<a class="skip-link" href="#main-content">Skip to diagnostic content</a>
+
+<header class="site-header" role="banner">
+	<div class="site-container">
+		<div class="header-inner">
+			<a href="/" class="site-branding" rel="home">
+				<span class="brand-icon" aria-hidden="true">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+				</span>
+				<div>
+					<span class="brand-title">Fault and Fix</span>
+					<span class="brand-subtitle">Technical Appliance Reference</span>
+				</div>
+			</a>
+
+			<div class="header-search">
+				<form role="search" method="get" class="header-search-form" action="/"><label for="header-search-input" class="screen-reader-text">Search error code, brand, model</label><span class="header-search-icon" aria-hidden="true">
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+					</span>
+					<input id="header-search-input" type="search" class="header-search-input" placeholder="Search error code, brand, model..." value="" name="s" aria-label="Search error codes and guides">
+				</form>
+			</div>
+
+			<nav class="header-nav" aria-label="Primary Navigation">
+				<ul id="menu-primary-header-navigation" class="nav-menu">
+					<li class="menu-item"><a href="/">Home</a></li>
+					<li class="menu-item"><a href="/category/washing-machines/">Washing Machines</a></li>
+					<li class="menu-item"><a href="/category/dryers/">Dryers</a></li>
+					<li class="menu-item"><a href="/brand/whirlpool/">Whirlpool</a></li>
+					<li class="menu-item"><a href="/brand/maytag/">Maytag</a></li>
+					<li class="menu-item"><a href="/about/">About</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-actions">
+				<button class="btn-icon btn-mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+					<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main id="main-content" class="site-main">
+	<article class="single-article-layout post type-post status-publish format-standard has-post-thumbnail category-dryers appliance_brand-samsung">
+		<header class="article-header">
+			<nav class="adc-breadcrumbs" aria-label="Breadcrumbs"><a href="/">Home</a><span class="adc-breadcrumbs-separator" aria-hidden="true">/</span><a href="/category/dryers/">Dryers</a><span class="adc-breadcrumbs-separator" aria-hidden="true">/</span><span aria-current="page">Samsung bE / bE2 / 6E</span></nav>
+			<h1 class="article-title">Samsung Dryer bE / bE2 Error Code: Stuck Button & Touch Panel Repair</h1>
+
+			<div class="article-meta-bar">
+				<div class="article-meta-item">
+					<svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+					<span>By Fault and Fix Diagnostic Engineering Team</span>
+				</div>
+
+				<div class="article-meta-item">
+					<svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+					<span>Updated: <time datetime="2026-11-18T08:00:00+00:00">Nov 18, 2026</time></span>
+				</div>
+
+				<div class="article-meta-item" style="color:var(--color-success); font-weight:600;">
+					<svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+					<span>OEM Verified</span>
+				</div>
+			</div>
+
+			<section class="diagnostic-summary-card" aria-label="Quick Diagnostic Summary">
+				<div class="dsc-badge-wrap">
+					<span class="dsc-badge">Fault Code: bE / bE2 / 6E</span>
+					<span class="dsc-verification-badge">Reviewed by Master Appliance Technician</span>
+				</div>
+
+				<div class="dsc-row dsc-meaning-row">
+					<span class="dsc-label">What It Means:</span>
+					<span class="dsc-val">Keypad Button Continuous Short / Stuck Key (Central microprocessor detects a user touch key held closed continuously for more than 30 seconds)</span>
+				</div>
+
+				<div class="dsc-row dsc-cause-row">
+					<span class="dsc-label">Most Likely Root Cause:</span>
+					<span class="dsc-val">A mechanical plastic button tab jammed in depressed position or moisture/corrosion shorting the capacitive touch membrane trace on user interface sub-PCB.</span>
+				</div>
+
+				<div class="dsc-grid">
+					<div class="dsc-grid-item">
+						<span class="dsc-label">Repair Difficulty:</span>
+						<span class="dsc-val">Beginner to Intermediate DIY</span>
+					</div>
+					<div class="dsc-grid-item">
+						<span class="dsc-label">Estimated Time:</span>
+						<span class="dsc-val">20–30 minutes</span>
+					</div>
+					<div class="dsc-grid-item dsc-grid-full">
+						<span class="dsc-label">Required Tools:</span>
+						<span class="dsc-val">Phillips screwdriver, isopropyl alcohol 90%+, microfiber swab, plastic pry tool</span>
+					</div>
+					<div class="dsc-grid-item dsc-grid-full">
+						<span class="dsc-label">Applicable Models:</span>
+						<span class="dsc-val">Samsung DVE50M7400, DVE54R7200, DVG45R6100, DVE45T6000 series</span>
+					</div>
+				</div>
+
+				<div class="dsc-action-panel">
+					<div class="dsc-action-header" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+						<div style="display:inline-flex; align-items:center; gap:6px;">
+							<svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.381z" clip-rule="evenodd"></path></svg>
+							<strong>Immediate Safe Action / 60-Second Quick Check</strong>
+						</div>
+					</div>
+					<p class="dsc-action-text">Run your thumb firmly across all console buttons from left to right. Rapidly tap each button 10 times to dislodge any stuck plastic edge.</p>
+				</div>
+			</section>
+		</header>
+
+		<div class="single-container">
+			<div class="article-main-content">
+				<figure class="article-featured-image" style="margin-bottom:2rem; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--color-border); box-shadow:var(--shadow-sm);">
+					<img width="1024" height="572" src="/wp-content/uploads/diagnostics/dryer-heating-element-thermal-fuse-test-1024x572.webp" class="attachment-large size-large wp-post-image" alt="Samsung Dryer bE / bE2 Error Code: Stuck Button & Touch Panel Repair" loading="lazy" style="width:100%; height:auto; display:block;">
+				</figure>
+
+				<div class="entry-content">
+					<h2 class="wp-block-heading" id="symptoms">1. Symptoms & Operational Failure Signs</h2>
+					<p>When code <strong>bE / bE2 / 6E</strong> triggers, the appliance controller detects abnormal electrical feedback or physical boundary limits out of range. Check for these real-world failure symptoms:</p>
+					<ul>
+	<li>Dryer beeps incessantly when plugged in and flashes error code 'bE' or 'bE2'.</li>
+	<li>Control panel is completely unresponsive to finger presses on Start or Cycle knobs.</li>
+	<li>Dryer turns on spontaneously and initiates unwanted cycles.</li>
+	<li>Display digits flicker or cycle continuously through menu options.</li>
+					</ul>
+
+					<h2 class="wp-block-heading" id="reset-sequence">2. The 30-Second Hard Reset Sequence</h2>
+					<p>Clear temporary software glitches, parasitic capacitive voltage, and transient relay lockouts with this manufacturer capacitive discharge sequence:</p>
+					<ol>
+	<li>Unplug dryer power cord from wall outlet for 5 minutes.</li>
+	<li>While unplugged, press and hold the Power button for 10 seconds to drain capacitive charge.</li>
+	<li>Inspect physical touch buttons around Start, Temp, and Dry Level for debris or sticky spills.</li>
+	<li>Plug cord back in and observe whether control boots to normal idle screen.</li>
+					</ol>
+
+					<h2 class="wp-block-heading" id="diagnostic-mode">3. Entering Hidden Factory Diagnostic Mode</h2>
+					<p>Execute this authorized technician button cadence to retrieve stored historical error logs and force individual component actuation tests:</p>
+					<ol>
+	<li>Enter diagnostic test mode: Press 'Dry Level' and 'Time' together for 7 seconds.</li>
+	<li>Audible chime confirms test mode. Look at digital display: code 'bE2' indicates sub-PCB fault.</li>
+	<li>Press each button individually: display will beep and show unique button identification number.</li>
+	<li>If display beeps continuously without touching buttons, touch matrix is defective.</li>
+					</ol>
+
+					<h2 class="wp-block-heading" id="multimeter-test">4. Multimeter Resistance (Ω) Specifications & Harness Pinouts</h2>
+					<p>Disconnect electrical power before probing harness terminals. Set your digital multimeter to the lowest Ohms (Ω) scale and verify the circuit integrity against OEM specifications:</p>
+					<table class="table-diagnostic">
+						<thead>
+							<tr>
+								<th>Component & Harness Terminals</th>
+								<th>Expected OEM Reading (Normal)</th>
+								<th>Failure Threshold (Replace Component)</th>
+							</tr>
+						</thead>
+						<tbody>
+		<tr>
+			<td><strong>Touch Ribbon Cable Matrix<br><small style='color:var(--color-text-secondary);'>Test pins on disconnected ribbon cable</small></strong></td>
+			<td><strong>Infinite (OL) with no button pressed</strong></td>
+			<td><span style='color:var(--color-danger); font-weight:600;'>Under 10 kΩ (Moisture short across circuit traces)</span></td>
+		</tr>
+		<tr>
+			<td><strong>Power Supply Rail to UI Board<br><small style='color:var(--color-text-secondary);'>Main PCB harness CN3 Red to Black</small></strong></td>
+			<td><strong>5.0V DC steady logic supply</strong></td>
+			<td><span style='color:var(--color-danger); font-weight:600;'>0.0V DC or unstable fluctuating voltage</span></td>
+		</tr>
+		<tr>
+			<td><strong>Door Switch Continuity<br><small style='color:var(--color-text-secondary);'>Door closed position</small></strong></td>
+			<td><strong>0.0 Ω (Closed circuit zero ohms)</strong></td>
+			<td><span style='color:var(--color-danger); font-weight:600;'>Infinite (OL) open circuit</span></td>
+		</tr>
+						</tbody>
+					</table>
+
+					<h2 class="wp-block-heading" id="teardown-steps">5. Step-by-Step Mechanical Tear-Down & Repair</h2>
+					<p>Follow these 5 OEM service manual steps to access, inspect, and replace the failing component safely:</p>
+					<ol>
+	<li><strong>Disconnect Power:</strong> Unplug dryer from 240V/120V wall receptacle.</li>
+	<li><strong>Remove Console Rear Cover:</strong> Remove 4 Phillips screws holding the sheet metal cover behind the top front control console.</li>
+	<li><strong>Unclip UI Sub-Board:</strong> Disconnect multi-pin ribbon cables linking display board to main power PCB.</li>
+	<li><strong>Clean Ribbon Contacts:</strong> Release ribbon connector zero-insertion-force (ZIF) lock. Clean gold ribbon contacts with 90%+ isopropyl alcohol on a lint-free swab.</li>
+	<li><strong>Re-Seat or Replace Board:</strong> If individual capacitive switch remains stuck closed, replace user interface display board (DC92-01626A / DC92-02144A) and reassemble.</li>
+					</ol>
+
+					<section class="adc-semantic-cluster-box" aria-label="Connected Diagnostic Guides">
+						<div class="adc-cluster-header">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+							<h3 style="margin:0; font-size:1.15rem; font-weight:700;">Connected Samsung Diagnostic Guides &amp; Next Steps</h3>
+						</div>
+						<div class="adc-cluster-grid">
+							<a href="/samsung-dryer-error-code-de-door-switch-latch-fix/" class="adc-cluster-card">
+								<span class="adc-cluster-card-title">Samsung Dryer Error Code De Door Switch Latch Fix</span>
+								<span class="adc-cluster-card-sub">Verified OEM Diagnostics &rarr;</span>
+							</a>
+							<a href="/samsung-dryer-error-code-he-heater-relay-tripped-fix/" class="adc-cluster-card">
+								<span class="adc-cluster-card-title">Samsung Dryer Error Code He Heater Relay Tripped Fix</span>
+								<span class="adc-cluster-card-sub">Verified OEM Diagnostics &rarr;</span>
+							</a>
+							<a href="/samsung-range-error-code-se-5e-keypad-short-fix/" class="adc-cluster-card">
+								<span class="adc-cluster-card-title">Samsung Range Error Code Se 5E Keypad Short Fix</span>
+								<span class="adc-cluster-card-sub">Verified OEM Diagnostics &rarr;</span>
+							</a>
+						</div>
+					</section>
+
+					<h2 class="wp-block-heading" id="faq">6. Frequently Asked Questions</h2>
+					<div class="faq-item" style="margin-bottom:1.5rem; padding:1.25rem; background:var(--color-bg-subtle); border-radius:var(--radius-md); border-left:4px solid var(--color-primary);">
+						<h3 style="font-size:1.05rem; margin-top:0; margin-bottom:0.5rem; color:var(--color-text-main);">Can cleaning spray cause code bE2 on Samsung dryers?</h3>
+						<p style="margin:0; color:var(--color-text-secondary); line-height:1.6;">Yes. Spraying liquid glass cleaner directly onto the front control panel allows liquid to seep behind the plastic bezel, bridging the sensitive capacitive touch traces and triggering code bE2 within minutes.</p>
+					</div>
+					<div class="faq-item" style="margin-bottom:1.5rem; padding:1.25rem; background:var(--color-bg-subtle); border-radius:var(--radius-md); border-left:4px solid var(--color-primary);">
+						<h3 style="font-size:1.05rem; margin-top:0; margin-bottom:0.5rem; color:var(--color-text-main);">What is the difference between bE and bE2?</h3>
+						<p style="margin:0; color:var(--color-text-secondary); line-height:1.6;">Error bE indicates a general stuck button on the main keypad matrix, while bE2 specifically indicates an internal communication or short-circuit error within the user interface sub-microprocessor.</p>
+					</div>
+
+				</div>
+
+				<div class="related-guides">
+					<h3 style="margin-top:2rem; margin-bottom:1rem; font-size:1.25rem;">Connected Diagnostic Procedures</h3>
+					<div class="adc-cluster-grid">
+							<a href="/samsung-dryer-error-code-de-door-switch-latch-fix/" class="adc-cluster-card">
+								<span class="adc-cluster-card-title">Samsung Dryer Error Code De Door Switch Latch Fix</span>
+								<span class="adc-cluster-card-sub">Verified OEM Diagnostics &rarr;</span>
+							</a>
+							<a href="/samsung-dryer-error-code-he-heater-relay-tripped-fix/" class="adc-cluster-card">
+								<span class="adc-cluster-card-title">Samsung Dryer Error Code He Heater Relay Tripped Fix</span>
+								<span class="adc-cluster-card-sub">Verified OEM Diagnostics &rarr;</span>
+							</a>
+							<a href="/samsung-range-error-code-se-5e-keypad-short-fix/" class="adc-cluster-card">
+								<span class="adc-cluster-card-title">Samsung Range Error Code Se 5E Keypad Short Fix</span>
+								<span class="adc-cluster-card-sub">Verified OEM Diagnostics &rarr;</span>
+							</a>
+					</div>
+				</div>
+			</div>
+
+			<aside class="article-sidebar" aria-label="Diagnostic Sidebar">
+				<div class="sticky-sidebar">
+					<div class="sidebar-widget">
+						<h3 class="sidebar-widget-title">On This Page</h3>
+						<div class="table-of-contents">
+							<ul style="list-style:none; padding-left:0; font-size:var(--font-size-sm); line-height:1.8;">
+								<li><a href="#symptoms" style="text-decoration:none; color:var(--color-text-secondary);">1. Symptoms & Operational Signs</a></li>
+								<li><a href="#reset-sequence" style="text-decoration:none; color:var(--color-text-secondary);">2. 30-Second Reset Routine</a></li>
+								<li><a href="#diagnostic-mode" style="text-decoration:none; color:var(--color-text-secondary);">3. Hidden Diagnostic Mode</a></li>
+								<li><a href="#multimeter-test" style="text-decoration:none; color:var(--color-text-secondary);">4. Multimeter Resistance (Ω)</a></li>
+								<li><a href="#teardown-steps" style="text-decoration:none; color:var(--color-text-secondary);">5. Tear-Down & Repair</a></li>
+								<li><a href="#faq" style="text-decoration:none; color:var(--color-text-secondary);">6. Common FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sidebar-widget" style="border-left:4px solid var(--color-warning-border);">
+						<h3 class="sidebar-widget-title" style="color:var(--color-warning-text);">Technician Safety Notice</h3>
+						<p style="font-size:var(--font-size-xs); color:var(--color-text-secondary); line-height:1.5;">
+							Always disconnect 120V/240V AC electrical power and shut off water or gas supply valves before servicing cabinet internals. Verify zero voltage with a calibrated meter.
+						</p>
+					</div>
+
+					<div class="sidebar-widget">
+						<h3 class="sidebar-widget-title">Search Error Clearinghouse</h3>
+						<form role="search" method="get" action="/">
+							<input type="search" name="s" placeholder="e.g. UB / UE, LE, F5 E1..." style="width:100%; padding:8px; border:1px solid var(--color-border); border-radius:4px; font-size:13px; margin-bottom:8px;">
+							<button type="submit" class="hero-search-btn" style="width:100%; padding:8px; font-size:13px; min-height:36px;">Search Guides</button>
+						</form>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</article>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+	<div class="footer-main">
+		<div class="site-container">
+			<div class="footer-grid">
+				<div class="footer-brand-col">
+					<div class="site-branding" style="margin-bottom:0.75rem;">
+						<span class="brand-icon" aria-hidden="true">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+						</span>
+						<span class="brand-title" style="font-size:1.1rem;">Fault and Fix</span>
+					</div>
+					<p>The independent technical reference for homeowner appliance fault codes, OEM diagnostic modes, and verified troubleshooting workflows.</p>
+					<div class="footer-emergency-note">
+						<strong>Safety Notice:</strong>
+						Always disconnect electrical power and shut off water supplies before servicing appliances. Consult a certified technician if unsure.
+					</div>
+				</div>
+
+				<div class="footer-col">
+					<h3 class="footer-col-title">Appliances</h3>
+					<ul class="footer-links">
+						<li><a href="/category/washing-machines/">Washing Machines</a></li>
+						<li><a href="/category/dryers/">Dryers</a></li>
+						<li><a href="/category/refrigerators/">Refrigerators</a></li>
+						<li><a href="/category/dishwashers/">Dishwashers</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h3 class="footer-col-title">Manufacturers</h3>
+					<ul class="footer-links">
+						<li><a href="/brand/whirlpool/">Whirlpool Guides</a></li>
+						<li><a href="/brand/maytag/">Maytag Guides</a></li>
+						<li><a href="/brand/samsung/">Samsung Codes</a></li>
+						<li><a href="/brand/lg/">LG Electronics</a></li>
+						<li><a href="/brand/ge/">GE Appliances</a></li>
+						<li><a href="/brand/bosch/">Bosch Guides</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h3 class="footer-col-title">Standards &amp; Policies</h3>
+					<ul class="footer-links">
+						<li><a href="/about/">About Us</a></li>
+						<li><a href="/editorial-verification-policy/">Editorial &amp; Verification</a></li>
+						<li><a href="/corrections-policy/">Corrections Policy</a></li>
+						<li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+						<li><a href="/disclaimer/">Safety Disclaimer</a></li>
+						<li><a href="/privacy-policy/">Privacy Policy</a></li>
+						<li><a href="/contact/">Contact Technical Team</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="site-container">
+			<div class="footer-bottom-inner">
+				<div>
+					&copy; 2026 Fault and Fix. All technical trademarks and manufacturer brand names are property of their respective owners.
+				</div>
+				<div>
+					<a href="#main-content" style="text-decoration:none; color:var(--color-text-secondary); font-weight:600;">
+						Back to top &uarr;
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script id="adc-theme-script-js" src="/wp-content/themes/appliance-diagnostic-clearinghouse/assets/js/main.min.js?ver=1.0.1" defer></script>
+</body>
+</html>
